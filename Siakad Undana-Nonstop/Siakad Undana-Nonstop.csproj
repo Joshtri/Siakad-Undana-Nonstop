@@ -1,0 +1,271 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{311750C1-8AA1-42E3-9CAC-ECB875543AE6}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Siakad_Undana_Nonstop</RootNamespace>
+    <AssemblyName>Siakad Undana-Nonstop</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>Siakad_Undana_Nonstop.Program</StartupObject>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Base\BaseForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Base\BaseForm.Designer.cs">
+      <DependentUpon>BaseForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Base\BaseFormTambahUbah.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Base\BaseFormTambahUbah.Designer.cs">
+      <DependentUpon>BaseFormTambahUbah.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Entity\Grades.cs" />
+    <Compile Include="Entity\Semester.cs" />
+    <Compile Include="Entity\Students.cs" />
+    <Compile Include="Entity\Subjects.cs" />
+    <Compile Include="LoginOfficer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LoginOfficer.Designer.cs">
+      <DependentUpon>LoginOfficer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormSemester.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormSemester.Designer.cs">
+      <DependentUpon>FormSemester.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormsMahasiswa\FormDaftarMahasiswa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormsMahasiswa\FormDaftarMahasiswa.Designer.cs">
+      <DependentUpon>FormDaftarMahasiswa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormsMahasiswa\FormTambahUbahMahasiswa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormsMahasiswa\FormTambahUbahMahasiswa.Designer.cs">
+      <DependentUpon>FormTambahUbahMahasiswa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormsMK\FormDaftarMK.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormsMK\FormDaftarMK.Designer.cs">
+      <DependentUpon>FormDaftarMK.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormsMK\FormTambahUbahMK.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormsMK\FormTambahUbahMK.Designer.cs">
+      <DependentUpon>FormTambahUbahMK.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormsNilai\FormDaftarNilai.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormsNilai\FormDaftarNilai.Designer.cs">
+      <DependentUpon>FormDaftarNilai.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormsNilai\FormTambahUbahNilai.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormsNilai\FormTambahUbahNilai.Designer.cs">
+      <DependentUpon>FormTambahUbahNilai.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormsSemester\FormDaftarSemester.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormsSemester\FormDaftarSemester.Designer.cs">
+      <DependentUpon>FormDaftarSemester.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormsSemester\FormTambahUbahSemester.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormsSemester\FormTambahUbahSemester.Designer.cs">
+      <DependentUpon>FormTambahUbahSemester.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Main Page\MainPages.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Main Page\MainPages.Designer.cs">
+      <DependentUpon>MainPages.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ButtonModifying\RJButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Siakad_Menu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Siakad_Menu.Designer.cs">
+      <DependentUpon>Siakad_Menu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StudentsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StudentsForm.Designer.cs">
+      <DependentUpon>StudentsForm.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Base\BaseForm.resx">
+      <DependentUpon>BaseForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Base\BaseFormTambahUbah.resx">
+      <DependentUpon>BaseFormTambahUbah.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoginOfficer.resx">
+      <DependentUpon>LoginOfficer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormsMahasiswa\FormDaftarMahasiswa.resx">
+      <DependentUpon>FormDaftarMahasiswa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormsMahasiswa\FormTambahUbahMahasiswa.resx">
+      <DependentUpon>FormTambahUbahMahasiswa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormsMK\FormDaftarMK.resx">
+      <DependentUpon>FormDaftarMK.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormsNilai\FormDaftarNilai.resx">
+      <DependentUpon>FormDaftarNilai.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormsSemester\FormDaftarSemester.resx">
+      <DependentUpon>FormDaftarSemester.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main Page\MainPages.resx">
+      <DependentUpon>MainPages.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Siakad_Menu.resx">
+      <DependentUpon>Siakad_Menu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StudentsForm.resx">
+      <DependentUpon>StudentsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Profile.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Top Dock.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Logo_Undana copy.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Logo_Undana.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\registration.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainBox.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\score-icon-13.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\semester.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Bottom.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\3282617-200.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\trash tester.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\download-icon-create+24px-131985189925418849_24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\trash copy.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rey copy.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\exit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\minimize.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\minus-button.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\close.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BG UNDANA.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
