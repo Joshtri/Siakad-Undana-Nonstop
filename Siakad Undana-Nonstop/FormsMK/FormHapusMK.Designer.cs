@@ -49,6 +49,7 @@
             this.panel2.Controls.Add(this.label1);
             this.panel2.Controls.Add(this.textBoxKodeMk);
             this.panel2.Controls.Add(this.label3);
+            this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
             // 
             // textBoxKodeMk
             // 

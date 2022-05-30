@@ -16,7 +16,8 @@ namespace Siakad_Undana_Nonstop.FormsMK
     public partial class FormDaftarMK : BaseForm
     {
         FormTambahUbahMK FormchangeMK;
-        FormHapusMK FormsDeleteMK; 
+        FormHapusMK FormsDeleteMK;
+        FormUbahMK FormUpdateMK; 
      
         public FormDaftarMK()
         {
@@ -41,15 +42,15 @@ namespace Siakad_Undana_Nonstop.FormsMK
 
         private void buttonUbah_Click(object sender, EventArgs e)
         {
-            if (FormchangeMK == null || FormchangeMK.IsDisposed)
+            if (FormUpdateMK == null || FormUpdateMK.IsDisposed)
             {
-                FormchangeMK = new FormTambahUbahMK();
+                FormUpdateMK = new FormUbahMK();
             }
 
-            FormchangeMK.LabelJudulUbahtambah.Text = "Ubah Mata Kuliah";
-            FormchangeMK.Adding_Operation = false;
-            FormchangeMK.Show();
-            FormchangeMK.BringToFront();
+            FormUpdateMK.LabelJudulUbahtambah.Text = "Ubah Mata Kuliah";
+            FormUpdateMK.Adding_Operation = false;
+            FormUpdateMK.Show();
+            FormUpdateMK.BringToFront();
             Hide();
         }
 

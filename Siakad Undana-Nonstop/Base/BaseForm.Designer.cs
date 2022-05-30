@@ -33,25 +33,25 @@
             this.BaseFormdataGridViewData = new System.Windows.Forms.DataGridView();
             this.TitleBars = new System.Windows.Forms.Panel();
             this.Clock = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.ShowDataButton = new System.Windows.Forms.Button();
+            this.TitleBar = new System.Windows.Forms.Panel();
+            this.labelJudul = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.BtnMin = new System.Windows.Forms.Button();
             this.BtnMax = new System.Windows.Forms.Button();
-            this.label4 = new System.Windows.Forms.Label();
             this.BtnClose = new System.Windows.Forms.Button();
-            this.TitleBar = new System.Windows.Forms.Panel();
-            this.labelJudul = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.buttonClose = new System.Windows.Forms.Button();
             this.buttonRefresh = new System.Windows.Forms.Button();
             this.buttonUbah = new System.Windows.Forms.Button();
             this.buttonHapus = new System.Windows.Forms.Button();
             this.buttonTambah = new System.Windows.Forms.Button();
-            this.timer1 = new System.Windows.Forms.Timer(this.components);
-            this.ShowDataButton = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.BaseFormdataGridViewData)).BeginInit();
             this.TitleBars.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.TitleBar.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -95,6 +95,57 @@
             this.Clock.Size = new System.Drawing.Size(61, 15);
             this.Clock.TabIndex = 18;
             this.Clock.Text = "xx:xx:xx";
+            this.Clock.Click += new System.EventHandler(this.Clock_Click);
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(32, 9);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(81, 13);
+            this.label4.TabIndex = 6;
+            this.label4.Text = "Siakad Undana";
+            // 
+            // timer1
+            // 
+            this.timer1.Enabled = true;
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
+            // 
+            // ShowDataButton
+            // 
+            this.ShowDataButton.Image = ((System.Drawing.Image)(resources.GetObject("ShowDataButton.Image")));
+            this.ShowDataButton.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.ShowDataButton.Location = new System.Drawing.Point(682, 342);
+            this.ShowDataButton.Name = "ShowDataButton";
+            this.ShowDataButton.Size = new System.Drawing.Size(93, 30);
+            this.ShowDataButton.TabIndex = 18;
+            this.ShowDataButton.Text = "Show Data";
+            this.ShowDataButton.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.ShowDataButton.UseVisualStyleBackColor = true;
+            // 
+            // TitleBar
+            // 
+            this.TitleBar.BackColor = System.Drawing.Color.Transparent;
+            this.TitleBar.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("TitleBar.BackgroundImage")));
+            this.TitleBar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.TitleBar.Controls.Add(this.labelJudul);
+            this.TitleBar.Location = new System.Drawing.Point(0, 31);
+            this.TitleBar.Name = "TitleBar";
+            this.TitleBar.Size = new System.Drawing.Size(864, 33);
+            this.TitleBar.TabIndex = 17;
+            // 
+            // labelJudul
+            // 
+            this.labelJudul.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.labelJudul.BackColor = System.Drawing.Color.Transparent;
+            this.labelJudul.Font = new System.Drawing.Font("Barlow", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelJudul.Location = new System.Drawing.Point(111, -4);
+            this.labelJudul.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.labelJudul.Name = "labelJudul";
+            this.labelJudul.Size = new System.Drawing.Size(482, 32);
+            this.labelJudul.TabIndex = 12;
+            this.labelJudul.Text = "JUDUL";
+            this.labelJudul.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // pictureBox1
             // 
@@ -134,15 +185,6 @@
             this.BtnMax.UseVisualStyleBackColor = true;
             this.BtnMax.Click += new System.EventHandler(this.BtnMin_Click);
             // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(32, 9);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(81, 13);
-            this.label4.TabIndex = 6;
-            this.label4.Text = "Siakad Undana";
-            // 
             // BtnClose
             // 
             this.BtnClose.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
@@ -157,30 +199,6 @@
             this.BtnClose.TabIndex = 8;
             this.BtnClose.UseVisualStyleBackColor = false;
             this.BtnClose.Click += new System.EventHandler(this.BtnClose_Click);
-            // 
-            // TitleBar
-            // 
-            this.TitleBar.BackColor = System.Drawing.Color.Transparent;
-            this.TitleBar.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("TitleBar.BackgroundImage")));
-            this.TitleBar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.TitleBar.Controls.Add(this.labelJudul);
-            this.TitleBar.Location = new System.Drawing.Point(0, 31);
-            this.TitleBar.Name = "TitleBar";
-            this.TitleBar.Size = new System.Drawing.Size(864, 33);
-            this.TitleBar.TabIndex = 17;
-            // 
-            // labelJudul
-            // 
-            this.labelJudul.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.labelJudul.BackColor = System.Drawing.Color.Transparent;
-            this.labelJudul.Font = new System.Drawing.Font("Barlow", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelJudul.Location = new System.Drawing.Point(111, -4);
-            this.labelJudul.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.labelJudul.Name = "labelJudul";
-            this.labelJudul.Size = new System.Drawing.Size(482, 32);
-            this.labelJudul.TabIndex = 12;
-            this.labelJudul.Text = "JUDUL";
-            this.labelJudul.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panel1
             // 
@@ -279,23 +297,6 @@
             this.buttonTambah.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.buttonTambah.UseVisualStyleBackColor = true;
             // 
-            // timer1
-            // 
-            this.timer1.Enabled = true;
-            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
-            // 
-            // ShowDataButton
-            // 
-            this.ShowDataButton.Image = ((System.Drawing.Image)(resources.GetObject("ShowDataButton.Image")));
-            this.ShowDataButton.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.ShowDataButton.Location = new System.Drawing.Point(682, 342);
-            this.ShowDataButton.Name = "ShowDataButton";
-            this.ShowDataButton.Size = new System.Drawing.Size(93, 30);
-            this.ShowDataButton.TabIndex = 18;
-            this.ShowDataButton.Text = "Show Data";
-            this.ShowDataButton.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.ShowDataButton.UseVisualStyleBackColor = true;
-            // 
             // BaseForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -316,8 +317,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.BaseFormdataGridViewData)).EndInit();
             this.TitleBars.ResumeLayout(false);
             this.TitleBars.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.TitleBar.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel1.ResumeLayout(false);
             this.ResumeLayout(false);
 

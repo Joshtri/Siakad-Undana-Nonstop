@@ -49,6 +49,7 @@
             // buttonSimpan
             // 
             this.buttonSimpan.FlatAppearance.BorderSize = 0;
+            this.buttonSimpan.Click += new System.EventHandler(this.buttonSimpan_Click);
             // 
             // panel2
             // 

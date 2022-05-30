@@ -33,7 +33,7 @@ namespace Siakad_Undana_Nonstop.FormsMahasiswa
             MessageBox.Show("Data Telah Terhapus");
             Hide();
 
-            daftarMahasiswa.Show();
+            
 
         }
 

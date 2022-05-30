@@ -33,11 +33,7 @@
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.TitleBars = new System.Windows.Forms.Panel();
             this.Clock = new System.Windows.Forms.Label();
-            this.pictureBox6 = new System.Windows.Forms.PictureBox();
-            this.BtnMin = new System.Windows.Forms.Button();
-            this.BtnMax = new System.Windows.Forms.Button();
             this.label6 = new System.Windows.Forms.Label();
-            this.BtnClose = new System.Windows.Forms.Button();
             this.label5 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.GreetingUser = new System.Windows.Forms.Label();
@@ -47,10 +43,10 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.About = new Siakad_Undana_Nonstop.RJButton();
-            this.Notes = new Siakad_Undana_Nonstop.RJButton();
-            this.CalenderButton = new Siakad_Undana_Nonstop.RJButton();
-            this.StatisticButton = new Siakad_Undana_Nonstop.RJButton();
+            this.pictureBox6 = new System.Windows.Forms.PictureBox();
+            this.BtnMin = new System.Windows.Forms.Button();
+            this.BtnMax = new System.Windows.Forms.Button();
+            this.BtnClose = new System.Windows.Forms.Button();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.button4 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
@@ -59,11 +55,15 @@
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.button3 = new System.Windows.Forms.Button();
+            this.About = new Siakad_Undana_Nonstop.RJButton();
+            this.Notes = new Siakad_Undana_Nonstop.RJButton();
+            this.CalenderButton = new Siakad_Undana_Nonstop.RJButton();
+            this.StatisticButton = new Siakad_Undana_Nonstop.RJButton();
             this.TitleBars.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
@@ -103,44 +103,6 @@
             this.Clock.TabIndex = 18;
             this.Clock.Text = "xx:xx:xx";
             // 
-            // pictureBox6
-            // 
-            this.pictureBox6.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox6.Image")));
-            this.pictureBox6.Location = new System.Drawing.Point(3, 2);
-            this.pictureBox6.Name = "pictureBox6";
-            this.pictureBox6.Size = new System.Drawing.Size(26, 26);
-            this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox6.TabIndex = 17;
-            this.pictureBox6.TabStop = false;
-            // 
-            // BtnMin
-            // 
-            this.BtnMin.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.BtnMin.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("BtnMin.BackgroundImage")));
-            this.BtnMin.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.BtnMin.FlatAppearance.BorderSize = 0;
-            this.BtnMin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnMin.Location = new System.Drawing.Point(701, 2);
-            this.BtnMin.Name = "BtnMin";
-            this.BtnMin.Size = new System.Drawing.Size(28, 26);
-            this.BtnMin.TabIndex = 9;
-            this.BtnMin.UseVisualStyleBackColor = true;
-            this.BtnMin.Click += new System.EventHandler(this.BtnMin_Click);
-            // 
-            // BtnMax
-            // 
-            this.BtnMax.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.BtnMax.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("BtnMax.BackgroundImage")));
-            this.BtnMax.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.BtnMax.FlatAppearance.BorderSize = 0;
-            this.BtnMax.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnMax.Location = new System.Drawing.Point(735, 2);
-            this.BtnMax.Name = "BtnMax";
-            this.BtnMax.Size = new System.Drawing.Size(28, 26);
-            this.BtnMax.TabIndex = 7;
-            this.BtnMax.UseVisualStyleBackColor = true;
-            this.BtnMax.Click += new System.EventHandler(this.BtnMax_Click);
-            // 
             // label6
             // 
             this.label6.AutoSize = true;
@@ -149,21 +111,6 @@
             this.label6.Size = new System.Drawing.Size(81, 13);
             this.label6.TabIndex = 6;
             this.label6.Text = "Siakad Undana";
-            // 
-            // BtnClose
-            // 
-            this.BtnClose.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.BtnClose.BackColor = System.Drawing.Color.Transparent;
-            this.BtnClose.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("BtnClose.BackgroundImage")));
-            this.BtnClose.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.BtnClose.FlatAppearance.BorderSize = 0;
-            this.BtnClose.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnClose.Location = new System.Drawing.Point(769, 2);
-            this.BtnClose.Name = "BtnClose";
-            this.BtnClose.Size = new System.Drawing.Size(28, 26);
-            this.BtnClose.TabIndex = 8;
-            this.BtnClose.UseVisualStyleBackColor = false;
-            this.BtnClose.Click += new System.EventHandler(this.BtnClose_Click);
             // 
             // label5
             // 
@@ -191,13 +138,13 @@
             // 
             this.GreetingUser.AutoSize = true;
             this.GreetingUser.BackColor = System.Drawing.Color.Transparent;
-            this.GreetingUser.Font = new System.Drawing.Font("Copse", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.GreetingUser.Font = new System.Drawing.Font("Copse", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.GreetingUser.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.GreetingUser.Location = new System.Drawing.Point(33, 27);
+            this.GreetingUser.Location = new System.Drawing.Point(117, 43);
             this.GreetingUser.Name = "GreetingUser";
-            this.GreetingUser.Size = new System.Drawing.Size(54, 19);
+            this.GreetingUser.Size = new System.Drawing.Size(267, 20);
             this.GreetingUser.TabIndex = 19;
-            this.GreetingUser.Text = "xxxxx";
+            this.GreetingUser.Text = "Selamat Datang di Siakad UNDANA";
             this.GreetingUser.Click += new System.EventHandler(this.GreetingUser_Click);
             // 
             // panel3
@@ -266,86 +213,67 @@
             this.panel2.Size = new System.Drawing.Size(170, 354);
             this.panel2.TabIndex = 1;
             // 
-            // About
+            // pictureBox6
             // 
-            this.About.BackColor = System.Drawing.Color.RosyBrown;
-            this.About.BackgroundColor = System.Drawing.Color.RosyBrown;
-            this.About.BorderColor = System.Drawing.Color.PaleVioletRed;
-            this.About.BorderRadius = 6;
-            this.About.BorderSize = 0;
-            this.About.FlatAppearance.BorderSize = 0;
-            this.About.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.About.ForeColor = System.Drawing.Color.White;
-            this.About.Location = new System.Drawing.Point(26, 230);
-            this.About.Name = "About";
-            this.About.Size = new System.Drawing.Size(112, 38);
-            this.About.TabIndex = 3;
-            this.About.Text = "About";
-            this.About.TextColor = System.Drawing.Color.White;
-            this.About.UseVisualStyleBackColor = false;
+            this.pictureBox6.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox6.Image")));
+            this.pictureBox6.Location = new System.Drawing.Point(3, 2);
+            this.pictureBox6.Name = "pictureBox6";
+            this.pictureBox6.Size = new System.Drawing.Size(26, 26);
+            this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox6.TabIndex = 17;
+            this.pictureBox6.TabStop = false;
             // 
-            // Notes
+            // BtnMin
             // 
-            this.Notes.BackColor = System.Drawing.Color.RosyBrown;
-            this.Notes.BackgroundColor = System.Drawing.Color.RosyBrown;
-            this.Notes.BorderColor = System.Drawing.Color.PaleVioletRed;
-            this.Notes.BorderRadius = 6;
-            this.Notes.BorderSize = 0;
-            this.Notes.FlatAppearance.BorderSize = 0;
-            this.Notes.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Notes.ForeColor = System.Drawing.Color.White;
-            this.Notes.Location = new System.Drawing.Point(26, 173);
-            this.Notes.Name = "Notes";
-            this.Notes.Size = new System.Drawing.Size(112, 38);
-            this.Notes.TabIndex = 2;
-            this.Notes.Text = "Notes";
-            this.Notes.TextColor = System.Drawing.Color.White;
-            this.Notes.UseVisualStyleBackColor = false;
+            this.BtnMin.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.BtnMin.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("BtnMin.BackgroundImage")));
+            this.BtnMin.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.BtnMin.FlatAppearance.BorderSize = 0;
+            this.BtnMin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnMin.Location = new System.Drawing.Point(701, 2);
+            this.BtnMin.Name = "BtnMin";
+            this.BtnMin.Size = new System.Drawing.Size(28, 26);
+            this.BtnMin.TabIndex = 9;
+            this.BtnMin.UseVisualStyleBackColor = true;
+            this.BtnMin.Click += new System.EventHandler(this.BtnMin_Click);
             // 
-            // CalenderButton
+            // BtnMax
             // 
-            this.CalenderButton.BackColor = System.Drawing.Color.RosyBrown;
-            this.CalenderButton.BackgroundColor = System.Drawing.Color.RosyBrown;
-            this.CalenderButton.BorderColor = System.Drawing.Color.PaleVioletRed;
-            this.CalenderButton.BorderRadius = 6;
-            this.CalenderButton.BorderSize = 0;
-            this.CalenderButton.FlatAppearance.BorderSize = 0;
-            this.CalenderButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.CalenderButton.ForeColor = System.Drawing.Color.White;
-            this.CalenderButton.Location = new System.Drawing.Point(26, 119);
-            this.CalenderButton.Name = "CalenderButton";
-            this.CalenderButton.Size = new System.Drawing.Size(112, 38);
-            this.CalenderButton.TabIndex = 1;
-            this.CalenderButton.Text = "Calender";
-            this.CalenderButton.TextColor = System.Drawing.Color.White;
-            this.CalenderButton.UseVisualStyleBackColor = false;
+            this.BtnMax.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.BtnMax.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("BtnMax.BackgroundImage")));
+            this.BtnMax.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.BtnMax.FlatAppearance.BorderSize = 0;
+            this.BtnMax.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnMax.Location = new System.Drawing.Point(735, 2);
+            this.BtnMax.Name = "BtnMax";
+            this.BtnMax.Size = new System.Drawing.Size(28, 26);
+            this.BtnMax.TabIndex = 7;
+            this.BtnMax.UseVisualStyleBackColor = true;
+            this.BtnMax.Click += new System.EventHandler(this.BtnMax_Click);
             // 
-            // StatisticButton
+            // BtnClose
             // 
-            this.StatisticButton.BackColor = System.Drawing.Color.RosyBrown;
-            this.StatisticButton.BackgroundColor = System.Drawing.Color.RosyBrown;
-            this.StatisticButton.BorderColor = System.Drawing.Color.PaleVioletRed;
-            this.StatisticButton.BorderRadius = 6;
-            this.StatisticButton.BorderSize = 0;
-            this.StatisticButton.FlatAppearance.BorderSize = 0;
-            this.StatisticButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.StatisticButton.ForeColor = System.Drawing.Color.White;
-            this.StatisticButton.Location = new System.Drawing.Point(26, 70);
-            this.StatisticButton.Name = "StatisticButton";
-            this.StatisticButton.Size = new System.Drawing.Size(112, 38);
-            this.StatisticButton.TabIndex = 0;
-            this.StatisticButton.Text = "Statistic";
-            this.StatisticButton.TextColor = System.Drawing.Color.White;
-            this.StatisticButton.UseVisualStyleBackColor = false;
+            this.BtnClose.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.BtnClose.BackColor = System.Drawing.Color.Transparent;
+            this.BtnClose.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("BtnClose.BackgroundImage")));
+            this.BtnClose.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.BtnClose.FlatAppearance.BorderSize = 0;
+            this.BtnClose.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnClose.Location = new System.Drawing.Point(769, 2);
+            this.BtnClose.Name = "BtnClose";
+            this.BtnClose.Size = new System.Drawing.Size(28, 26);
+            this.BtnClose.TabIndex = 8;
+            this.BtnClose.UseVisualStyleBackColor = false;
+            this.BtnClose.Click += new System.EventHandler(this.BtnClose_Click);
             // 
             // pictureBox5
             // 
             this.pictureBox5.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.pictureBox5.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox5.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox5.Image")));
-            this.pictureBox5.Location = new System.Drawing.Point(644, 192);
+            this.pictureBox5.Location = new System.Drawing.Point(646, 182);
             this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(53, 52);
+            this.pictureBox5.Size = new System.Drawing.Size(65, 64);
             this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox5.TabIndex = 9;
             this.pictureBox5.TabStop = false;
@@ -444,6 +372,79 @@
             this.button3.UseVisualStyleBackColor = false;
             this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
+            // About
+            // 
+            this.About.BackColor = System.Drawing.Color.RosyBrown;
+            this.About.BackgroundColor = System.Drawing.Color.RosyBrown;
+            this.About.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.About.BorderRadius = 6;
+            this.About.BorderSize = 0;
+            this.About.FlatAppearance.BorderSize = 0;
+            this.About.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.About.ForeColor = System.Drawing.Color.White;
+            this.About.Location = new System.Drawing.Point(26, 230);
+            this.About.Name = "About";
+            this.About.Size = new System.Drawing.Size(112, 38);
+            this.About.TabIndex = 3;
+            this.About.Text = "About";
+            this.About.TextColor = System.Drawing.Color.White;
+            this.About.UseVisualStyleBackColor = false;
+            this.About.Click += new System.EventHandler(this.About_Click);
+            // 
+            // Notes
+            // 
+            this.Notes.BackColor = System.Drawing.Color.RosyBrown;
+            this.Notes.BackgroundColor = System.Drawing.Color.RosyBrown;
+            this.Notes.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.Notes.BorderRadius = 6;
+            this.Notes.BorderSize = 0;
+            this.Notes.FlatAppearance.BorderSize = 0;
+            this.Notes.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Notes.ForeColor = System.Drawing.Color.White;
+            this.Notes.Location = new System.Drawing.Point(26, 173);
+            this.Notes.Name = "Notes";
+            this.Notes.Size = new System.Drawing.Size(112, 38);
+            this.Notes.TabIndex = 2;
+            this.Notes.Text = "Notes";
+            this.Notes.TextColor = System.Drawing.Color.White;
+            this.Notes.UseVisualStyleBackColor = false;
+            // 
+            // CalenderButton
+            // 
+            this.CalenderButton.BackColor = System.Drawing.Color.RosyBrown;
+            this.CalenderButton.BackgroundColor = System.Drawing.Color.RosyBrown;
+            this.CalenderButton.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.CalenderButton.BorderRadius = 6;
+            this.CalenderButton.BorderSize = 0;
+            this.CalenderButton.FlatAppearance.BorderSize = 0;
+            this.CalenderButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.CalenderButton.ForeColor = System.Drawing.Color.White;
+            this.CalenderButton.Location = new System.Drawing.Point(26, 119);
+            this.CalenderButton.Name = "CalenderButton";
+            this.CalenderButton.Size = new System.Drawing.Size(112, 38);
+            this.CalenderButton.TabIndex = 1;
+            this.CalenderButton.Text = "Calender";
+            this.CalenderButton.TextColor = System.Drawing.Color.White;
+            this.CalenderButton.UseVisualStyleBackColor = false;
+            // 
+            // StatisticButton
+            // 
+            this.StatisticButton.BackColor = System.Drawing.Color.RosyBrown;
+            this.StatisticButton.BackgroundColor = System.Drawing.Color.RosyBrown;
+            this.StatisticButton.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.StatisticButton.BorderRadius = 6;
+            this.StatisticButton.BorderSize = 0;
+            this.StatisticButton.FlatAppearance.BorderSize = 0;
+            this.StatisticButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.StatisticButton.ForeColor = System.Drawing.Color.White;
+            this.StatisticButton.Location = new System.Drawing.Point(26, 70);
+            this.StatisticButton.Name = "StatisticButton";
+            this.StatisticButton.Size = new System.Drawing.Size(112, 38);
+            this.StatisticButton.TabIndex = 0;
+            this.StatisticButton.Text = "Statistic";
+            this.StatisticButton.TextColor = System.Drawing.Color.White;
+            this.StatisticButton.UseVisualStyleBackColor = false;
+            // 
             // Siakad_Menu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -469,12 +470,12 @@
             this.Load += new System.EventHandler(this.Siakad_Menu_Load);
             this.TitleBars.ResumeLayout(false);
             this.TitleBars.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
             this.panel2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();

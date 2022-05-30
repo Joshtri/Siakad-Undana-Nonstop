@@ -13,6 +13,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SqlClient;
 using System.Runtime.InteropServices;
+using Siakad_Undana_Nonstop.It_s_Features;
 
 
 namespace Siakad_Undana_Nonstop
@@ -20,14 +21,18 @@ namespace Siakad_Undana_Nonstop
     public partial class Siakad_Menu : Form
     {
         //anggap saja ini form 2
-        public static Siakad_Menu instance; 
+        public static Siakad_Menu instance;
+        public Label labl1; 
 
         public Siakad_Menu()
         {
             InitializeComponent();
-            instance = this; 
-
+            instance = this;
+            labl1 = GreetingUser; 
         }
+
+        
+
         private FormDaftarMahasiswa FormDftrMahas;
         private FormDaftarMK FormDftrMatkul;
         private FormDaftarNilai FormDftrNli;
@@ -174,6 +179,14 @@ namespace Siakad_Undana_Nonstop
         private void Siakad_Menu_Load(object sender, EventArgs e)
         {
             
+        }
+
+        private void About_Click(object sender, EventArgs e)
+        {
+            About frmabout = new About();
+
+            frmabout.Show();
+            Hide();
         }
     }
 }

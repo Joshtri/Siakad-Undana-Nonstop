@@ -17,6 +17,7 @@ namespace Siakad_Undana_Nonstop.FormsSemester
     {
         FormTambahUbahSemester FormChangesemester;
         FormHapusSemester FormDeleteSemester;
+        FormUbahSemester FormUpdateSemester;
       
         public FormDaftarSemester()
         {
@@ -41,15 +42,15 @@ namespace Siakad_Undana_Nonstop.FormsSemester
 
         private void buttonUbah_Click(object sender, EventArgs e)
         {
-            if (FormChangesemester == null || FormChangesemester.IsDisposed)
+            if (FormUpdateSemester == null || FormUpdateSemester.IsDisposed)
             {
-                FormChangesemester = new FormTambahUbahSemester();
+                FormUpdateSemester = new FormUbahSemester();
             }
 
-            FormChangesemester.LabelJudulUbahtambah.Text = "Ubah Semester";
-            FormChangesemester.Adding_Operation = false;
-            FormChangesemester.Show();
-            FormChangesemester.BringToFront();
+            FormUpdateSemester.LabelJudulUbahtambah.Text = "Ubah Semester";
+            FormUpdateSemester.Adding_Operation = false;
+            FormUpdateSemester.Show();
+            FormUpdateSemester.BringToFront();
             Hide();
         }
 
@@ -70,7 +71,7 @@ namespace Siakad_Undana_Nonstop.FormsSemester
             FormDeleteSemester.Adding_Operation = false;
             FormDeleteSemester.Show();
             FormDeleteSemester.BringToFront();
-            Hide();
+            
         }
         private void ShowData()
         {

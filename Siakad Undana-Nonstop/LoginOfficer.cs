@@ -7,12 +7,16 @@ namespace Siakad_Undana_Nonstop
 {
     public partial class LoginOfficer : Form
     {
-        LoginOfficer Instance; 
+        public static LoginOfficer Instance;
+        public TextBox txbox; 
+        
         public LoginOfficer()
         {
             InitializeComponent();
             Instance = this;
+            txbox = NameTextbox;  
         }
+
 
         public String Username;
         public String Password; //PK
@@ -21,9 +25,7 @@ namespace Siakad_Undana_Nonstop
 
         public void button1_Click(object sender, EventArgs e)
         {
-            Siakad_Menu siakad_Menu = new Siakad_Menu();
             
-
             Username = NameTextbox.Text;
             Password = PasswordBox.Text;
 
@@ -40,11 +42,10 @@ namespace Siakad_Undana_Nonstop
                 {
                     Username = NameTextbox.Text;
                     Password = PasswordBox.Text;
-
+                  
                     Siakad_Menu frm = new Siakad_Menu();
 
                     frm.Show();
-
                     this.Hide();
                 }
                 else
@@ -62,6 +63,7 @@ namespace Siakad_Undana_Nonstop
             {
                 connecting.Close();
             }
+             
 
             //if (NameTextbox.Text == Username && PasswordBox.Text == NIM_PK)
             //{

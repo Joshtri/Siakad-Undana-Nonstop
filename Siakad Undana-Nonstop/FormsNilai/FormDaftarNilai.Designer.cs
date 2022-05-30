@@ -55,6 +55,14 @@
             this.buttonHapus.Location = new System.Drawing.Point(311, 16);
             this.buttonHapus.Click += new System.EventHandler(this.buttonHapus_Click);
             // 
+            // ShowDataButton
+            // 
+            this.ShowDataButton.Click += new System.EventHandler(this.ShowDataButton_Click);
+            // 
+            // buttonClose
+            // 
+            this.buttonClose.FlatAppearance.BorderSize = 0;
+            // 
             // FormDaftarNilai
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);

@@ -8,6 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data.SqlClient;
 
 namespace Siakad_Undana_Nonstop.FormsNilai
 {
@@ -18,6 +19,21 @@ namespace Siakad_Undana_Nonstop.FormsNilai
             InitializeComponent();
         }
 
-        
+        private void buttonSimpan_Click(object sender, EventArgs e)
+        {
+            SqlConnection connecting = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;Initial Catalog=SiakadDB;Integrated Security=True");
+
+            connecting.Open();
+
+            SqlCommand cmd = new SqlCommand("DELETE Grade_Table WHERE kode_mk=@kode_mk", connecting);
+            cmd.Parameters.AddWithValue("@kode_mk", textBoxKodeMk.Text);
+
+            cmd.ExecuteNonQuery();
+            MessageBox.Show("Data Telah Terhapus");
+            Hide();
+
+            //FormDaftarNilai ListNilai = new FormDaftarNilai(); 
+            //ListNilai.Show();
+        }
     }
 }

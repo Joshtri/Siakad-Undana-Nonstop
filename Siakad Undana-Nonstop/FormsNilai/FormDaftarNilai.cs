@@ -9,6 +9,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using Siakad_Undana_Nonstop.Entity;
+using System.Data.SqlClient;
 
 namespace Siakad_Undana_Nonstop.FormsNilai
 {
@@ -16,6 +17,7 @@ namespace Siakad_Undana_Nonstop.FormsNilai
     {
         FormTambahUbahNilai FormchangeGrades;
         FormHapusNilai DeleteFormGrades;
+        FormUbahNilai FormUpdateGrades;
        
         public FormDaftarNilai()
         {
@@ -24,6 +26,18 @@ namespace Siakad_Undana_Nonstop.FormsNilai
             labelJudul.Text = "Daftar Nilai";
            
            // BaseFormdataGridViewData.DataSource = Listgrades;
+        }
+
+        public void BindGrid()
+        {
+            SqlConnection connecting = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;Initial Catalog=SiakadDB;Integrated Security=True");
+            SqlCommand cmd = new SqlCommand("SELECT * FROM Grade_Table", connecting);
+            SqlDataAdapter AdapterData = new SqlDataAdapter(cmd);
+            DataTable dt = new DataTable();
+
+            AdapterData.Fill(dt);
+
+            BaseFormdataGridViewData.DataSource = dt;
         }
 
         private void buttonTambah_Click(object sender, EventArgs e)
@@ -42,15 +56,15 @@ namespace Siakad_Undana_Nonstop.FormsNilai
 
         private void buttonUbah_Click(object sender, EventArgs e)
         {
-            if (FormchangeGrades == null || FormchangeGrades.IsDisposed)
+            if (FormUpdateGrades == null || FormUpdateGrades.IsDisposed)
             {
-                FormchangeGrades = new FormTambahUbahNilai();
+                FormUpdateGrades = new FormUbahNilai();
             }
 
-            FormchangeGrades.LabelJudulUbahtambah.Text = "Ubah Nilai";
-            FormchangeGrades.Adding_Operation = false;
-            FormchangeGrades.Show();
-            FormchangeGrades.BringToFront();
+            FormUpdateGrades.LabelJudulUbahtambah.Text = "Ubah Nilai";
+            FormUpdateGrades.Adding_Operation = false;
+            FormUpdateGrades.Show();
+            FormUpdateGrades.BringToFront();
             Hide();
         }
 
@@ -65,6 +79,7 @@ namespace Siakad_Undana_Nonstop.FormsNilai
             DeleteFormGrades.Adding_Operation = false;
             DeleteFormGrades.Show();
             DeleteFormGrades.BringToFront();
+
     
         }
 
@@ -74,6 +89,11 @@ namespace Siakad_Undana_Nonstop.FormsNilai
             //Siakad_Menu FormMenuSiakad = new Siakad_Menu();
 
 
+        }
+
+        private void ShowDataButton_Click(object sender, EventArgs e)
+        {
+            BindGrid();
         }
     }
 }

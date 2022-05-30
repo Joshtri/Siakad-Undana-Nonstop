@@ -49,6 +49,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Base\BaseAbout.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Base\BaseAbout.Designer.cs">
+      <DependentUpon>BaseAbout.cs</DependentUpon>
+    </Compile>
     <Compile Include="Base\BaseForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -71,11 +77,23 @@
     <Compile Include="FormsMahasiswa\FormHapusMahasiswa.Designer.cs">
       <DependentUpon>FormHapusMahasiswa.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormsMahasiswa\FormUbahMahasiswa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormsMahasiswa\FormUbahMahasiswa.Designer.cs">
+      <DependentUpon>FormUbahMahasiswa.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormsMK\FormHapusMK.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="FormsMK\FormHapusMK.Designer.cs">
       <DependentUpon>FormHapusMK.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormsMK\FormUbahMK.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormsMK\FormUbahMK.Designer.cs">
+      <DependentUpon>FormUbahMK.cs</DependentUpon>
     </Compile>
     <Compile Include="FormsNilai\FormHapusNilai.cs">
       <SubType>Form</SubType>
@@ -83,11 +101,23 @@
     <Compile Include="FormsNilai\FormHapusNilai.Designer.cs">
       <DependentUpon>FormHapusNilai.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormsNilai\FormUbahNilai.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormsNilai\FormUbahNilai.Designer.cs">
+      <DependentUpon>FormUbahNilai.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormsSemester\FormHapusSemester.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="FormsSemester\FormHapusSemester.Designer.cs">
       <DependentUpon>FormHapusSemester.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormsSemester\FormUbahSemester.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormsSemester\FormUbahSemester.Designer.cs">
+      <DependentUpon>FormUbahSemester.cs</DependentUpon>
     </Compile>
     <Compile Include="It%27s Features\About.cs">
       <SubType>Form</SubType>
@@ -200,6 +230,9 @@
     <Compile Include="StudentsForm.Designer.cs">
       <DependentUpon>StudentsForm.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Base\BaseAbout.resx">
+      <DependentUpon>BaseAbout.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Base\BaseForm.resx">
       <DependentUpon>BaseForm.cs</DependentUpon>
     </EmbeddedResource>
@@ -209,20 +242,38 @@
     <EmbeddedResource Include="FormsMahasiswa\FormHapusMahasiswa.resx">
       <DependentUpon>FormHapusMahasiswa.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FormsMahasiswa\FormUbahMahasiswa.resx">
+      <DependentUpon>FormUbahMahasiswa.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormsMK\FormHapusMK.resx">
       <DependentUpon>FormHapusMK.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormsMK\FormTambahUbahMK.resx">
       <DependentUpon>FormTambahUbahMK.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FormsMK\FormUbahMK.resx">
+      <DependentUpon>FormUbahMK.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormsNilai\FormHapusNilai.resx">
+      <DependentUpon>FormHapusNilai.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormsNilai\FormTambahUbahNilai.resx">
       <DependentUpon>FormTambahUbahNilai.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormsNilai\FormUbahNilai.resx">
+      <DependentUpon>FormUbahNilai.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormsSemester\FormHapusSemester.resx">
       <DependentUpon>FormHapusSemester.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormsSemester\FormTambahUbahSemester.resx">
       <DependentUpon>FormTambahUbahSemester.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormsSemester\FormUbahSemester.resx">
+      <DependentUpon>FormUbahSemester.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="It%27s Features\About.resx">
+      <DependentUpon>About.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="LoginOfficer.resx">
       <DependentUpon>LoginOfficer.cs</DependentUpon>

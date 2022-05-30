@@ -40,7 +40,7 @@ namespace Siakad_Undana_Nonstop.FormsSemester
             MessageBox.Show("Data Telah Terhapus");
             Hide();
 
-            SemesterListForm.Show();
+            //SemesterListForm.Show();
         }
     }
 }

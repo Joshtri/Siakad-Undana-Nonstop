@@ -43,5 +43,10 @@ namespace Siakad_Undana_Nonstop.FormsMK
 
             ListMKForm.Show();
         }
+
+        private void panel2_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }

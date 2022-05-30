@@ -51,10 +51,12 @@
             this.panel2.Controls.Add(this.label2);
             this.panel2.Controls.Add(this.textBoxIdSemester);
             this.panel2.Controls.Add(this.label1);
+            this.panel2.Location = new System.Drawing.Point(208, 79);
+            this.panel2.Size = new System.Drawing.Size(419, 172);
             // 
             // textBoxNamaSemester
             // 
-            this.textBoxNamaSemester.Location = new System.Drawing.Point(211, 132);
+            this.textBoxNamaSemester.Location = new System.Drawing.Point(185, 94);
             this.textBoxNamaSemester.Margin = new System.Windows.Forms.Padding(2);
             this.textBoxNamaSemester.Name = "textBoxNamaSemester";
             this.textBoxNamaSemester.Size = new System.Drawing.Size(141, 20);
@@ -63,7 +65,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(123, 133);
+            this.label2.Location = new System.Drawing.Point(97, 95);
             this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(82, 13);
@@ -72,7 +74,7 @@
             // 
             // textBoxIdSemester
             // 
-            this.textBoxIdSemester.Location = new System.Drawing.Point(211, 97);
+            this.textBoxIdSemester.Location = new System.Drawing.Point(185, 59);
             this.textBoxIdSemester.Margin = new System.Windows.Forms.Padding(2);
             this.textBoxIdSemester.Name = "textBoxIdSemester";
             this.textBoxIdSemester.Size = new System.Drawing.Size(141, 20);
@@ -81,7 +83,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(123, 99);
+            this.label1.Location = new System.Drawing.Point(97, 61);
             this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(63, 13);

@@ -38,3 +38,10 @@ D:\Code\C#\Project 1.0\Siakad Undana-Nonstop\Siakad Undana-Nonstop\obj\Debug\Sia
 D:\Code\C#\Project 1.0\Siakad Undana-Nonstop\Siakad Undana-Nonstop\obj\Debug\Siakad Undana-Nonstop.exe
 D:\Code\C#\Project 1.0\Siakad Undana-Nonstop\Siakad Undana-Nonstop\obj\Debug\Siakad Undana-Nonstop.pdb
 D:\Code\C#\Project 1.0\Siakad Undana-Nonstop\Siakad Undana-Nonstop\obj\Debug\Siakad_Undana_Nonstop.FormsMK.FormHapusMK.resources
+D:\Code\C#\Project 1.0\Siakad Undana-Nonstop\Siakad Undana-Nonstop\obj\Debug\Siakad_Undana_Nonstop.FormsMahasiswa.FormUbahMahasiswa.resources
+D:\Code\C#\Project 1.0\Siakad Undana-Nonstop\Siakad Undana-Nonstop\obj\Debug\Siakad_Undana_Nonstop.FormsMK.FormUbahMK.resources
+D:\Code\C#\Project 1.0\Siakad Undana-Nonstop\Siakad Undana-Nonstop\obj\Debug\Siakad_Undana_Nonstop.FormsNilai.FormUbahNilai.resources
+D:\Code\C#\Project 1.0\Siakad Undana-Nonstop\Siakad Undana-Nonstop\obj\Debug\Siakad_Undana_Nonstop.FormsSemester.FormUbahSemester.resources
+D:\Code\C#\Project 1.0\Siakad Undana-Nonstop\Siakad Undana-Nonstop\obj\Debug\Siakad_Undana_Nonstop.FormsNilai.FormHapusNilai.resources
+D:\Code\C#\Project 1.0\Siakad Undana-Nonstop\Siakad Undana-Nonstop\obj\Debug\Siakad_Undana_Nonstop.Base.BaseAbout.resources
+D:\Code\C#\Project 1.0\Siakad Undana-Nonstop\Siakad Undana-Nonstop\obj\Debug\Siakad_Undana_Nonstop.It_s_Features.About.resources

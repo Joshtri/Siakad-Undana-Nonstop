@@ -113,5 +113,10 @@ namespace Siakad_Undana_Nonstop.Base
         {
 
         }
+
+        private void Clock_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

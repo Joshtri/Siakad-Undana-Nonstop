@@ -19,6 +19,7 @@ namespace Siakad_Undana_Nonstop.FormsMahasiswa
     {
         FormTambahUbahMahasiswa Formchangestudent;
         FormHapusMahasiswa FormDeletedstudent;
+        FormUbahMahasiswa FormUpdateStudent; 
         // public static List<Students> ListMahasiswa = new List<Students>();
 
         
@@ -49,15 +50,15 @@ namespace Siakad_Undana_Nonstop.FormsMahasiswa
 
         private void buttonUbah_Click(object sender, EventArgs e)
         {
-            if (Formchangestudent == null || Formchangestudent.IsDisposed)
+            if (FormUpdateStudent == null || FormUpdateStudent.IsDisposed)
             {
-                Formchangestudent = new FormTambahUbahMahasiswa();
+                FormUpdateStudent = new FormUbahMahasiswa();
             }
 
-            Formchangestudent.LabelJudulUbahtambah.Text = "Ubah Mahasiswa";
-            Formchangestudent.Adding_Operation = false;
-            Formchangestudent.Show();
-            Formchangestudent.BringToFront();
+            FormUpdateStudent.LabelJudulUbahtambah.Text = "Ubah Mahasiswa";
+            FormUpdateStudent.Adding_Operation = false;
+            FormUpdateStudent.Show();
+            FormUpdateStudent.BringToFront();
             Hide();
         }
 
