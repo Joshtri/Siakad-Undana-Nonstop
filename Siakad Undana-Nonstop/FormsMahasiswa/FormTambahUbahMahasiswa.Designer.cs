@@ -53,7 +53,6 @@
             // buttonClose
             // 
             this.buttonClose.FlatAppearance.BorderSize = 0;
-       
             // 
             // buttonSimpan
             // 
@@ -72,7 +71,7 @@
             this.panel2.Controls.Add(this.textBoxJK);
             this.panel2.Controls.Add(this.label8);
             this.panel2.Controls.Add(this.textBoxNama);
-            this.panel2.Location = new System.Drawing.Point(147, 97);
+            this.panel2.Location = new System.Drawing.Point(136, 108);
             // 
             // textBox4
             // 

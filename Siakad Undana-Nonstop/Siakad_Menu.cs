@@ -19,7 +19,15 @@ namespace Siakad_Undana_Nonstop
 {
     public partial class Siakad_Menu : Form
     {
+        //anggap saja ini form 2
+        public static Siakad_Menu instance; 
 
+        public Siakad_Menu()
+        {
+            InitializeComponent();
+            instance = this; 
+
+        }
         private FormDaftarMahasiswa FormDftrMahas;
         private FormDaftarMK FormDftrMatkul;
         private FormDaftarNilai FormDftrNli;
@@ -39,10 +47,6 @@ namespace Siakad_Undana_Nonstop
         private SqlConnection connecting = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;Initial Catalog=SiakadDB;Integrated Security=True");
 
 
-        public Siakad_Menu()
-        {
-            InitializeComponent();
-        }
 
         private void panel1_Paint(object sender, PaintEventArgs e)
         {
@@ -122,18 +126,20 @@ namespace Siakad_Undana_Nonstop
 
         private void GreetingUser_Click(object sender, EventArgs e)
         {
-            LoginOfficer loginofficer = new LoginOfficer();
+            //LoginOfficer loginofficer = new LoginOfficer();
 
-             var Name = loginofficer.NameTextbox.Text = "";
-             var Password = loginofficer.PasswordBox.Text = "";
-
-
-            String querry = "SELECT * FROM Table_1 WHERE username = '" + Name + "' AND password =  '" + Password+ "'";
-            SqlDataAdapter sda = new SqlDataAdapter(querry, connecting);
+            //string Name = loginofficer.NameTextbox.Text;
+            //string Password = loginofficer.PasswordBox.Text;
 
 
-            GreetingUser.Text = $"Selamat Datang{Name} ".ToString();
+
+            //var FindName = $"Selamat Datang {Name}";
+            //GreetingUser.Text = FindName;
+            //GreetingUser.Show();
             
+
+            //String querry = "SELECT * FROM Table_1 WHERE username = '" + Name + "' AND password =  '" + Password+ "'";
+            //SqlDataAdapter sda = new SqlDataAdapter(querry, connecting);
 
 
 
@@ -163,6 +169,11 @@ namespace Siakad_Undana_Nonstop
                 ReleaseCapture();
                 SendMessage(Handle, WM_NCLBUTTONDOWN, (IntPtr)HT_CAPTION, (IntPtr)0);
             }
+        }
+
+        private void Siakad_Menu_Load(object sender, EventArgs e)
+        {
+            
         }
     }
 }

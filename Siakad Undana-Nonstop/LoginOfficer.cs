@@ -7,9 +7,11 @@ namespace Siakad_Undana_Nonstop
 {
     public partial class LoginOfficer : Form
     {
+        LoginOfficer Instance; 
         public LoginOfficer()
         {
             InitializeComponent();
+            Instance = this;
         }
 
         public String Username;
@@ -19,6 +21,9 @@ namespace Siakad_Undana_Nonstop
 
         public void button1_Click(object sender, EventArgs e)
         {
+            Siakad_Menu siakad_Menu = new Siakad_Menu();
+            
+
             Username = NameTextbox.Text;
             Password = PasswordBox.Text;
 
