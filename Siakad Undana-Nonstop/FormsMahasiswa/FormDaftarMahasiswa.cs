@@ -10,36 +10,27 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data.SqlClient;
+
 
 namespace Siakad_Undana_Nonstop.FormsMahasiswa
 {
     public partial class FormDaftarMahasiswa : BaseForm
     {
         FormTambahUbahMahasiswa Formchangestudent;
+        FormHapusMahasiswa FormDeletedstudent;
+        // public static List<Students> ListMahasiswa = new List<Students>();
 
-        Students StudentClick = null;
-        static List<Students> ListStudents = new List<Students>();
+        
         public FormDaftarMahasiswa()
         {
             InitializeComponent();
-
-            labelJudul.Text = "Daftar Mahasiswa";
-            for (int i = 0; i < 10; i++)
-            {
-                Students newMahasiswa = new Students();
-                newMahasiswa.Name = "123456789" + i.ToString();
-                newMahasiswa.Age = "10" + i.ToString();
-                newMahasiswa.NIM = "2006080010" + i.ToString();
-                newMahasiswa.DateYear = "23" + i.ToString();
-
-               
-    
-                ListStudents.Add(newMahasiswa);
-            }
-            BaseFormdataGridViewData.DataSource = ListStudents;
-
+            labelJudul.Text = "Data Mahasiswa";
         }
 
+
+
+ 
         private void buttonTambah_Click(object sender, EventArgs e)
         {
            
@@ -53,6 +44,7 @@ namespace Siakad_Undana_Nonstop.FormsMahasiswa
             Formchangestudent.Adding_Operation = true;
             Formchangestudent.Show();
             Formchangestudent.BringToFront();
+            Hide();
         }
 
         private void buttonUbah_Click(object sender, EventArgs e)
@@ -66,47 +58,83 @@ namespace Siakad_Undana_Nonstop.FormsMahasiswa
             Formchangestudent.Adding_Operation = false;
             Formchangestudent.Show();
             Formchangestudent.BringToFront();
+            Hide();
+        }
+
+        private void ShowData()
+        {
+
+            SqlConnection connecting = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;Initial Catalog=SiakadDB;Integrated Security=True");
+            connecting.Open();
+
+            SqlCommand cmd = new SqlCommand("SELECT * FROM Student_Table", connecting);
+
+            SqlDataAdapter AdapterDate = new SqlDataAdapter(cmd);
+            DataTable dt = new DataTable();
+
+            AdapterDate.Fill(dt);
+            BaseFormdataGridViewData.DataSource = dt;
         }
 
        
 
         private void ButtonRefresh_Click(object sender, EventArgs e)
         {
-            BaseFormdataGridViewData.DataSource = null;
-            BaseFormdataGridViewData.DataSource = ListStudents;
+            ShowData();
         }
-
-        private void ButtonHapus_Click(object sender, EventArgs e)
+        public void BindGrid()
         {
+            SqlConnection connecting = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;Initial Catalog=SiakadDB;Integrated Security=True");
+            SqlCommand cmd = new SqlCommand("SELECT * FROM Student_Table", connecting);
+            SqlDataAdapter AdapterData = new SqlDataAdapter(cmd);
+            DataTable dt = new DataTable();
 
+            AdapterData.Fill(dt);
 
-            if (BaseFormdataGridViewData.DataSource != null)
+            BaseFormdataGridViewData.DataSource = dt;
+        }
+        public void ButtonHapus_Click(object sender, EventArgs e)
+        {
+            if (FormDeletedstudent == null || FormDeletedstudent.IsDisposed)
             {
-                FormDaftarMahasiswa.ListStudents.Remove(StudentClick);
+                FormDeletedstudent = new FormHapusMahasiswa();
             }
 
-            BaseFormdataGridViewData.DataSource = null;
-            BaseFormdataGridViewData.DataSource = ListStudents;
+            FormDeletedstudent.LabelJudulUbahtambah.Text = "Hapus Data Mahasiswa";
+            FormDeletedstudent.Adding_Operation = false;
+            FormDeletedstudent.Show();
+            FormDeletedstudent.BringToFront();
+           
+
+          
         }
 
         private void FormDaftarMahasiswa_Activated(object sender, EventArgs e)
         {
-            buttonRefresh.PerformClick();
+         
         }
 
-        //private void dataGridViewData_CellClick(object sender, DataGridViewCellEventArgs e)
-        //{
-        //    var nilaiCell = dataGridViewData.Rows[e.RowIndex].Cells[0].Value;
+        private void FormDaftarMahasiswa_Load(object sender, EventArgs e)
+        {
+ 
+        }
 
-        //    if (nilaiCell != null)
-        //    {
-        //        var isiCell = nilaiCell.ToString();
+        private void ShowDataButton_Click(object sender, EventArgs e)
+        {
+            ShowData();
+        }
+        protected override void buttonClose_Click(object sender, EventArgs e)
+        {
+            base.buttonClose_Click(sender, e);
+        }
 
-        //        StudentClick = ListStudents.Find(x => x.NIM == isiCell);
+       
 
-        //    }
-        //}
 
+        protected override void BaseFormdataGridViewData_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
         
+        }
+
     }
 }

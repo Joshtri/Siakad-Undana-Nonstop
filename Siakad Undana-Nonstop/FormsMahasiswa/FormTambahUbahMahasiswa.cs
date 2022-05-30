@@ -9,70 +9,57 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data.SqlClient;
 
 namespace Siakad_Undana_Nonstop.FormsMahasiswa
 {
     public partial class FormTambahUbahMahasiswa : BaseFormTambahUbah
     {
-        //Students SelectStudent = null;
-        public bool Add = false; 
+
+        
         public FormTambahUbahMahasiswa()
         {
             InitializeComponent();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+            
+        private void buttonSimpan_Click(object sender, EventArgs e)
         {
-            if (textBox1.Text.Length != 10)
-            {
-                MessageBox.Show("Panjang NIM harus 10 karakter");
+          
+            SqlConnection connecting = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;Initial Catalog=SiakadDB;Integrated Security=True");
+            connecting.Open(); 
 
-                return;
-            }
+            SqlCommand cmd = new SqlCommand("INSERT INTO Student_Table VALUES(@Name,@NIM,@JK,@DateYear,@Angkatan)", connecting);
+            cmd.Parameters.AddWithValue("@Name", textBoxNama.Text);
+            cmd.Parameters.AddWithValue("@NIM", textBoxNIM.Text);
+            cmd.Parameters.AddWithValue("@JK", textBoxJK.Text);
+            cmd.Parameters.AddWithValue("@DateYear", textBoxTanggalLahir.Text);
+            cmd.Parameters.AddWithValue("@Angkatan", textBoxAngkatan.Text);
 
-            long longNim = 0;
+            cmd.ExecuteNonQuery();
 
-            if (long.TryParse(textBox1.Text, out longNim) == false)
-            {
-                MessageBox.Show("NIM harus angka");
+            connecting.Close(); 
 
-                return;
-            }
+            MessageBox.Show("Anda Telah menyimpan Data");
 
-            if (Add == true)
-            {
-                Students newMahasiswa = new Students();
-                newMahasiswa.Name = textBox1.Text;
-                newMahasiswa.NIM = textBox2.Text;
-                newMahasiswa.DateYear = textBox2.Text;
-                newMahasiswa.Age = textBox4.Text;
-                newMahasiswa.JK = bool.Parse(textBox3.Text);
-                newMahasiswa.Angkatan = textBox4.Text;
-
-               // FormDaftarMahasiswa.ListStudents.Add(newMahasiswa);
-                MessageBox.Show("Data telah ditambahkan");
-
-                this.Close();
-
-            }
-            else
-            {
-                if (true)
-                {
-                    //var mahasiswaYangMauDiEdit = FormDaftarMahasiswa.ListStudents.Find(x => x.Nim == mahasiswaDipilih.Nim);
-
-                    //if (mahasiswaYangMauDiEdit != null)
-                    //{
-                    //    mahasiswaYangMauDiEdit.Nama = textBox2.Text;
-                    //    mahasiswaYangMauDiEdit.JenisKelamin = bool.Parse(textBox3.Text);
-                    //    mahasiswaYangMauDiEdit.Angkatan = int.Parse(textBox4.Text);
-
-                    //    MessageBox.Show("Data telah diubah");
-                    //    this.Close();
-                    //}
-                }
-
-            }
         }
+        public override void BtnMax_Click(object sender, EventArgs e)
+        {
+            base.BtnMax_Click(sender, e);
+        }
+
+        public override void BtnMin_Click(object sender, EventArgs e)
+        {
+            base.BtnMin_Click(sender, e);
+        }
+        protected override void buttonClose_Click(object sender, EventArgs e)
+        {
+            base.buttonClose_Click(sender, e);
+            FormDaftarMahasiswa daftarMahasiswa = new FormDaftarMahasiswa();
+
+            daftarMahasiswa.Show();
+        }
+
+        
     }
 }

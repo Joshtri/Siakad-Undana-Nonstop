@@ -15,23 +15,14 @@ namespace Siakad_Undana_Nonstop.FormsNilai
     public partial class FormDaftarNilai : BaseForm
     {
         FormTambahUbahNilai FormchangeGrades;
-        private static List<Grades> Listgrades = new List<Grades>();
+        FormHapusNilai DeleteFormGrades;
+       
         public FormDaftarNilai()
         {
             InitializeComponent();
 
             labelJudul.Text = "Daftar Nilai";
-            for (int i = 0; i < 10; i++)
-            {
-                Grades NewGrade = new Grades();
-                NewGrade.IdSemester = "123456789" + (i + 1).ToString();
-                NewGrade.CodeSubject = "23" + (i + 1).ToString();
-                NewGrade.Nim = "000" + (i + 1).ToString();
-                NewGrade.NumberGrade = 00;
-                NewGrade.LetterGrade = "000" + (i + 1).ToString();
-
-                Listgrades.Add(NewGrade); // untuk masuukan data ke list
-            }
+           
            // BaseFormdataGridViewData.DataSource = Listgrades;
         }
 
@@ -46,6 +37,7 @@ namespace Siakad_Undana_Nonstop.FormsNilai
             FormchangeGrades.Adding_Operation = true;
             FormchangeGrades.Show();
             FormchangeGrades.BringToFront();
+            Hide();
         }
 
         private void buttonUbah_Click(object sender, EventArgs e)
@@ -59,6 +51,29 @@ namespace Siakad_Undana_Nonstop.FormsNilai
             FormchangeGrades.Adding_Operation = false;
             FormchangeGrades.Show();
             FormchangeGrades.BringToFront();
+            Hide();
+        }
+
+        private void buttonHapus_Click(object sender, EventArgs e)
+        {
+            if (DeleteFormGrades == null || DeleteFormGrades.IsDisposed)
+            {
+                DeleteFormGrades = new FormHapusNilai();
+            }
+
+            DeleteFormGrades.LabelJudulUbahtambah.Text = "Hapus Data Nilai";
+            DeleteFormGrades.Adding_Operation = false;
+            DeleteFormGrades.Show();
+            DeleteFormGrades.BringToFront();
+    
+        }
+
+        protected override void buttonClose_Click(object sender, EventArgs e)
+        {
+            base.buttonClose_Click(sender, e);
+            //Siakad_Menu FormMenuSiakad = new Siakad_Menu();
+
+
         }
     }
 }

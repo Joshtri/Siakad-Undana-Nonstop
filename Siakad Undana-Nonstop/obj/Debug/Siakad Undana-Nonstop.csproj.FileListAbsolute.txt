@@ -11,12 +11,18 @@ D:\Code\Windows Form Only\Siakad Undana-Nonstop\Siakad Undana-Nonstop\obj\Debug\
 D:\Code\Windows Form Only\Siakad Undana-Nonstop\Siakad Undana-Nonstop\obj\Debug\Siakad_Undana_Nonstop.Siakad_Menu.resources
 D:\Code\Windows Form Only\Siakad Undana-Nonstop\Siakad Undana-Nonstop\obj\Debug\Siakad_Undana_Nonstop.Form1.resources
 D:\Code\Windows Form Only\Siakad Undana-Nonstop\Siakad Undana-Nonstop\obj\Debug\Siakad_Undana_Nonstop.StudentsForm.resources
-D:\Code\C#\Project 1.0\Siakad Undana-Nonstop\Siakad Undana-Nonstop\bin\Debug\Siakad Undana-Nonstop.exe
 D:\Code\C#\Project 1.0\Siakad Undana-Nonstop\Siakad Undana-Nonstop\bin\Debug\Siakad Undana-Nonstop.exe.config
+D:\Code\C#\Project 1.0\Siakad Undana-Nonstop\Siakad Undana-Nonstop\bin\Debug\Siakad Undana-Nonstop.exe
+D:\Code\C#\Project 1.0\Siakad Undana-Nonstop\Siakad Undana-Nonstop\bin\Debug\Siakad Undana-Nonstop.pdb
 D:\Code\C#\Project 1.0\Siakad Undana-Nonstop\Siakad Undana-Nonstop\obj\Debug\Siakad Undana-Nonstop.csproj.AssemblyReference.cache
 D:\Code\C#\Project 1.0\Siakad Undana-Nonstop\Siakad Undana-Nonstop\obj\Debug\Siakad Undana-Nonstop.csproj.SuggestedBindingRedirects.cache
 D:\Code\C#\Project 1.0\Siakad Undana-Nonstop\Siakad Undana-Nonstop\obj\Debug\Siakad_Undana_Nonstop.Base.BaseForm.resources
 D:\Code\C#\Project 1.0\Siakad Undana-Nonstop\Siakad Undana-Nonstop\obj\Debug\Siakad_Undana_Nonstop.Base.BaseFormTambahUbah.resources
+D:\Code\C#\Project 1.0\Siakad Undana-Nonstop\Siakad Undana-Nonstop\obj\Debug\Siakad_Undana_Nonstop.FormsMahasiswa.FormHapusMahasiswa.resources
+D:\Code\C#\Project 1.0\Siakad Undana-Nonstop\Siakad Undana-Nonstop\obj\Debug\Siakad_Undana_Nonstop.FormsMK.FormTambahUbahMK.resources
+D:\Code\C#\Project 1.0\Siakad Undana-Nonstop\Siakad Undana-Nonstop\obj\Debug\Siakad_Undana_Nonstop.FormsNilai.FormTambahUbahNilai.resources
+D:\Code\C#\Project 1.0\Siakad Undana-Nonstop\Siakad Undana-Nonstop\obj\Debug\Siakad_Undana_Nonstop.FormsSemester.FormHapusSemester.resources
+D:\Code\C#\Project 1.0\Siakad Undana-Nonstop\Siakad Undana-Nonstop\obj\Debug\Siakad_Undana_Nonstop.FormsSemester.FormTambahUbahSemester.resources
 D:\Code\C#\Project 1.0\Siakad Undana-Nonstop\Siakad Undana-Nonstop\obj\Debug\Siakad_Undana_Nonstop.LoginOfficer.resources
 D:\Code\C#\Project 1.0\Siakad Undana-Nonstop\Siakad Undana-Nonstop\obj\Debug\Siakad_Undana_Nonstop.FormsMahasiswa.FormDaftarMahasiswa.resources
 D:\Code\C#\Project 1.0\Siakad Undana-Nonstop\Siakad Undana-Nonstop\obj\Debug\Siakad_Undana_Nonstop.FormsMahasiswa.FormTambahUbahMahasiswa.resources
@@ -31,4 +37,4 @@ D:\Code\C#\Project 1.0\Siakad Undana-Nonstop\Siakad Undana-Nonstop\obj\Debug\Sia
 D:\Code\C#\Project 1.0\Siakad Undana-Nonstop\Siakad Undana-Nonstop\obj\Debug\Siakad Undana-Nonstop.csproj.CoreCompileInputs.cache
 D:\Code\C#\Project 1.0\Siakad Undana-Nonstop\Siakad Undana-Nonstop\obj\Debug\Siakad Undana-Nonstop.exe
 D:\Code\C#\Project 1.0\Siakad Undana-Nonstop\Siakad Undana-Nonstop\obj\Debug\Siakad Undana-Nonstop.pdb
-D:\Code\C#\Project 1.0\Siakad Undana-Nonstop\Siakad Undana-Nonstop\bin\Debug\Siakad Undana-Nonstop.pdb
+D:\Code\C#\Project 1.0\Siakad Undana-Nonstop\Siakad Undana-Nonstop\obj\Debug\Siakad_Undana_Nonstop.FormsMK.FormHapusMK.resources

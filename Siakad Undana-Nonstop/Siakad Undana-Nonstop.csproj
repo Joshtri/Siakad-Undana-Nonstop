@@ -65,6 +65,48 @@
     <Compile Include="Entity\Semester.cs" />
     <Compile Include="Entity\Students.cs" />
     <Compile Include="Entity\Subjects.cs" />
+    <Compile Include="FormsMahasiswa\FormHapusMahasiswa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormsMahasiswa\FormHapusMahasiswa.Designer.cs">
+      <DependentUpon>FormHapusMahasiswa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormsMK\FormHapusMK.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormsMK\FormHapusMK.Designer.cs">
+      <DependentUpon>FormHapusMK.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormsNilai\FormHapusNilai.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormsNilai\FormHapusNilai.Designer.cs">
+      <DependentUpon>FormHapusNilai.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormsSemester\FormHapusSemester.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormsSemester\FormHapusSemester.Designer.cs">
+      <DependentUpon>FormHapusSemester.cs</DependentUpon>
+    </Compile>
+    <Compile Include="It%27s Features\About.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="It%27s Features\About.Designer.cs">
+      <DependentUpon>About.cs</DependentUpon>
+    </Compile>
+    <Compile Include="It%27s Features\Calender.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="It%27s Features\Calender.Designer.cs">
+      <DependentUpon>Calender.cs</DependentUpon>
+    </Compile>
+    <Compile Include="It%27s Features\Notes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="It%27s Features\Notes.Designer.cs">
+      <DependentUpon>Notes.cs</DependentUpon>
+    </Compile>
     <Compile Include="LoginOfficer.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -136,6 +178,16 @@
     <Compile Include="ButtonModifying\RJButton.cs">
       <SubType>Component</SubType>
     </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="SiakadDBDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SiakadDBDataSet.xsd</DependentUpon>
+    </Compile>
     <Compile Include="Siakad_Menu.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -153,6 +205,24 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Base\BaseFormTambahUbah.resx">
       <DependentUpon>BaseFormTambahUbah.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormsMahasiswa\FormHapusMahasiswa.resx">
+      <DependentUpon>FormHapusMahasiswa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormsMK\FormHapusMK.resx">
+      <DependentUpon>FormHapusMK.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormsMK\FormTambahUbahMK.resx">
+      <DependentUpon>FormTambahUbahMK.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormsNilai\FormTambahUbahNilai.resx">
+      <DependentUpon>FormTambahUbahNilai.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormsSemester\FormHapusSemester.resx">
+      <DependentUpon>FormHapusSemester.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormsSemester\FormTambahUbahSemester.resx">
+      <DependentUpon>FormTambahUbahSemester.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="LoginOfficer.resx">
       <DependentUpon>LoginOfficer.cs</DependentUpon>
@@ -177,14 +247,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <Compile Include="Properties\Resources.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DependentUpon>Resources.resx</DependentUpon>
-      <DesignTime>True</DesignTime>
-    </Compile>
     <EmbeddedResource Include="Siakad_Menu.resx">
       <DependentUpon>Siakad_Menu.cs</DependentUpon>
     </EmbeddedResource>
@@ -200,6 +265,17 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <None Include="SiakadDBDataSet.xsc">
+      <DependentUpon>SiakadDBDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="SiakadDBDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>SiakadDBDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="SiakadDBDataSet.xss">
+      <DependentUpon>SiakadDBDataSet.xsd</DependentUpon>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
@@ -267,5 +343,9 @@
   <ItemGroup>
     <None Include="Resources\BG UNDANA.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\login_button.png" />
+  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

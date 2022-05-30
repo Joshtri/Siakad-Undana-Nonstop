@@ -9,29 +9,20 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data.SqlClient;
 
 namespace Siakad_Undana_Nonstop.FormsMK
 {
     public partial class FormDaftarMK : BaseForm
     {
-        FormTambahUbahMK FormchangeMK; 
-        private static List<Subjects> ListSubjects = new List<Subjects>();
+        FormTambahUbahMK FormchangeMK;
+        FormHapusMK FormsDeleteMK; 
+     
         public FormDaftarMK()
         {
             InitializeComponent();
 
-            labelJudul.Text = "Daftar Mata Kuliah";
-            for (int i = 0; i < 10; i++)
-            {
-                Subjects newMKul = new Subjects();
-                newMKul.SubjectCode = "123456789" + (i + 1).ToString();
-                newMKul.SubjectsName = "23" + (i + 1).ToString();
-                newMKul.Description = "000" + (i + 1).ToString();
-                newMKul.SKSTotal = 00;
-
-                ListSubjects.Add(newMKul); // untuk masuukan data ke list
-            }
-                BaseFormdataGridViewData.DataSource = ListSubjects;
+            labelJudul.Text = "Data Mata Kuliah"; 
         }
 
         private void buttonTambah_Click(object sender, EventArgs e)
@@ -45,6 +36,7 @@ namespace Siakad_Undana_Nonstop.FormsMK
             FormchangeMK.Adding_Operation = true;
             FormchangeMK.Show();
             FormchangeMK.BringToFront();
+            Hide();
         }
 
         private void buttonUbah_Click(object sender, EventArgs e)
@@ -58,6 +50,53 @@ namespace Siakad_Undana_Nonstop.FormsMK
             FormchangeMK.Adding_Operation = false;
             FormchangeMK.Show();
             FormchangeMK.BringToFront();
+            Hide();
+        }
+
+        protected override void buttonClose_Click(object sender, EventArgs e)
+        {
+            base.buttonClose_Click(sender, e);
+            //Siakad_Menu frm = new Siakad_Menu();
+            //frm.Show();
+        }
+
+        private void buttonHapus_Click(object sender, EventArgs e)
+        {
+            if (FormsDeleteMK == null || FormsDeleteMK.IsDisposed)
+            {
+                FormsDeleteMK = new FormHapusMK();
+            }
+
+            FormsDeleteMK.LabelJudulUbahtambah.Text = "Hapus Data Mata Kuliah";
+            FormsDeleteMK.Adding_Operation = false;
+            FormsDeleteMK.Show();
+            FormsDeleteMK.BringToFront();
+          
+        }
+
+        private void ShowData()
+        {
+
+            SqlConnection connecting = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;Initial Catalog=SiakadDB;Integrated Security=True");
+            connecting.Open();
+
+            SqlCommand cmd = new SqlCommand("SELECT * FROM Subject_Table", connecting);
+
+            SqlDataAdapter AdapterDate = new SqlDataAdapter(cmd);
+            DataTable dt = new DataTable();
+
+            AdapterDate.Fill(dt);
+            BaseFormdataGridViewData.DataSource = dt;
+        }
+
+        private void ShowDataButton_Click(object sender, EventArgs e)
+        {
+            ShowData();
+        }
+
+        private void buttonRefresh_Click(object sender, EventArgs e)
+        {
+            ShowData(); 
         }
     }
 }

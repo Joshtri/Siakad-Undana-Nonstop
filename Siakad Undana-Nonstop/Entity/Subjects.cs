@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Siakad_Undana_Nonstop.Entity
 {
-    internal class Subjects
+    public class Subjects
     {
         public string  SubjectCode { get; set; } //Key
         public string SubjectsName { get; set; }

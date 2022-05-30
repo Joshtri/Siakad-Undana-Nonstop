@@ -28,79 +28,236 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(BaseFormTambahUbah));
             this.LabelJudulUbahtambah = new System.Windows.Forms.Label();
-            this.panel2.SuspendLayout();
+            this.TitleBars = new System.Windows.Forms.Panel();
+            this.Clock = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.BtnMin = new System.Windows.Forms.Button();
+            this.BtnMax = new System.Windows.Forms.Button();
+            this.label4 = new System.Windows.Forms.Label();
+            this.BtnClose = new System.Windows.Forms.Button();
+            this.TitleBar = new System.Windows.Forms.Panel();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.buttonClose = new System.Windows.Forms.Button();
+            this.buttonSimpan = new System.Windows.Forms.Button();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.TitleBars.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.TitleBar.SuspendLayout();
+            this.panel1.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // panel2
-            // 
-            this.panel2.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.panel2.Controls.Add(this.button1);
-            this.panel2.Controls.Add(this.button5);
-            this.panel2.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel2.Location = new System.Drawing.Point(0, 412);
-            this.panel2.Margin = new System.Windows.Forms.Padding(2);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(800, 38);
-            this.panel2.TabIndex = 14;
-            // 
-            // button1
-            // 
-            this.button1.Dock = System.Windows.Forms.DockStyle.Right;
-            this.button1.Location = new System.Drawing.Point(616, 0);
-            this.button1.Margin = new System.Windows.Forms.Padding(2);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(92, 38);
-            this.button1.TabIndex = 4;
-            this.button1.Text = "Simpan";
-            this.button1.UseVisualStyleBackColor = true;
-            // 
-            // button5
-            // 
-            this.button5.Dock = System.Windows.Forms.DockStyle.Right;
-            this.button5.Location = new System.Drawing.Point(708, 0);
-            this.button5.Margin = new System.Windows.Forms.Padding(2);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(92, 38);
-            this.button5.TabIndex = 3;
-            this.button5.Text = "Close";
-            this.button5.UseVisualStyleBackColor = true;
-            this.button5.Click += new System.EventHandler(this.button5_Click);
             // 
             // LabelJudulUbahtambah
             // 
-            this.LabelJudulUbahtambah.Dock = System.Windows.Forms.DockStyle.Top;
+            this.LabelJudulUbahtambah.BackColor = System.Drawing.Color.Transparent;
             this.LabelJudulUbahtambah.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LabelJudulUbahtambah.Location = new System.Drawing.Point(0, 0);
+            this.LabelJudulUbahtambah.Location = new System.Drawing.Point(129, -2);
             this.LabelJudulUbahtambah.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.LabelJudulUbahtambah.Name = "LabelJudulUbahtambah";
-            this.LabelJudulUbahtambah.Size = new System.Drawing.Size(800, 39);
+            this.LabelJudulUbahtambah.Size = new System.Drawing.Size(512, 39);
             this.LabelJudulUbahtambah.TabIndex = 15;
             this.LabelJudulUbahtambah.Text = "Judul";
             this.LabelJudulUbahtambah.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // TitleBars
+            // 
+            this.TitleBars.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.TitleBars.Controls.Add(this.Clock);
+            this.TitleBars.Controls.Add(this.pictureBox1);
+            this.TitleBars.Controls.Add(this.BtnMin);
+            this.TitleBars.Controls.Add(this.BtnMax);
+            this.TitleBars.Controls.Add(this.label4);
+            this.TitleBars.Controls.Add(this.BtnClose);
+            this.TitleBars.Dock = System.Windows.Forms.DockStyle.Top;
+            this.TitleBars.Location = new System.Drawing.Point(0, 0);
+            this.TitleBars.Name = "TitleBars";
+            this.TitleBars.Size = new System.Drawing.Size(800, 30);
+            this.TitleBars.TabIndex = 17;
+            this.TitleBars.MouseDown += new System.Windows.Forms.MouseEventHandler(this.TitleBars_MouseDown);
+            // 
+            // Clock
+            // 
+            this.Clock.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.Clock.AutoSize = true;
+            this.Clock.BackColor = System.Drawing.Color.Transparent;
+            this.Clock.Font = new System.Drawing.Font("Copse", 9F);
+            this.Clock.Location = new System.Drawing.Point(354, 7);
+            this.Clock.Name = "Clock";
+            this.Clock.Size = new System.Drawing.Size(61, 15);
+            this.Clock.TabIndex = 18;
+            this.Clock.Text = "xx:xx:xx";
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(3, 2);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(26, 26);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 17;
+            this.pictureBox1.TabStop = false;
+            // 
+            // BtnMin
+            // 
+            this.BtnMin.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.BtnMin.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("BtnMin.BackgroundImage")));
+            this.BtnMin.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.BtnMin.FlatAppearance.BorderSize = 0;
+            this.BtnMin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnMin.Location = new System.Drawing.Point(701, 2);
+            this.BtnMin.Name = "BtnMin";
+            this.BtnMin.Size = new System.Drawing.Size(28, 26);
+            this.BtnMin.TabIndex = 9;
+            this.BtnMin.UseVisualStyleBackColor = true;
+            this.BtnMin.Click += new System.EventHandler(this.BtnMin_Click);
+            // 
+            // BtnMax
+            // 
+            this.BtnMax.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.BtnMax.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("BtnMax.BackgroundImage")));
+            this.BtnMax.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.BtnMax.FlatAppearance.BorderSize = 0;
+            this.BtnMax.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnMax.Location = new System.Drawing.Point(735, 2);
+            this.BtnMax.Name = "BtnMax";
+            this.BtnMax.Size = new System.Drawing.Size(28, 26);
+            this.BtnMax.TabIndex = 7;
+            this.BtnMax.UseVisualStyleBackColor = true;
+            this.BtnMax.Click += new System.EventHandler(this.BtnMax_Click);
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(32, 9);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(81, 13);
+            this.label4.TabIndex = 6;
+            this.label4.Text = "Siakad Undana";
+            // 
+            // BtnClose
+            // 
+            this.BtnClose.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.BtnClose.BackColor = System.Drawing.Color.Transparent;
+            this.BtnClose.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("BtnClose.BackgroundImage")));
+            this.BtnClose.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.BtnClose.FlatAppearance.BorderSize = 0;
+            this.BtnClose.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnClose.Location = new System.Drawing.Point(769, 2);
+            this.BtnClose.Name = "BtnClose";
+            this.BtnClose.Size = new System.Drawing.Size(28, 26);
+            this.BtnClose.TabIndex = 8;
+            this.BtnClose.UseVisualStyleBackColor = false;
+            this.BtnClose.Click += new System.EventHandler(this.BtnClose_Click);
+            // 
+            // TitleBar
+            // 
+            this.TitleBar.BackColor = System.Drawing.Color.Transparent;
+            this.TitleBar.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("TitleBar.BackgroundImage")));
+            this.TitleBar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.TitleBar.Controls.Add(this.LabelJudulUbahtambah);
+            this.TitleBar.Location = new System.Drawing.Point(0, 30);
+            this.TitleBar.Name = "TitleBar";
+            this.TitleBar.Size = new System.Drawing.Size(800, 33);
+            this.TitleBar.TabIndex = 18;
+            // 
+            // panel1
+            // 
+            this.panel1.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.panel1.BackColor = System.Drawing.Color.Transparent;
+            this.panel1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel1.BackgroundImage")));
+            this.panel1.Controls.Add(this.buttonClose);
+            this.panel1.Controls.Add(this.buttonSimpan);
+            this.panel1.Location = new System.Drawing.Point(0, 383);
+            this.panel1.Margin = new System.Windows.Forms.Padding(2);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(800, 67);
+            this.panel1.TabIndex = 19;
+            // 
+            // buttonClose
+            // 
+            this.buttonClose.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.buttonClose.BackColor = System.Drawing.SystemColors.GrayText;
+            this.buttonClose.FlatAppearance.BorderSize = 0;
+            this.buttonClose.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonClose.Font = new System.Drawing.Font("Barlow", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonClose.ForeColor = System.Drawing.Color.NavajoWhite;
+            this.buttonClose.Image = ((System.Drawing.Image)(resources.GetObject("buttonClose.Image")));
+            this.buttonClose.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.buttonClose.Location = new System.Drawing.Point(701, 19);
+            this.buttonClose.Margin = new System.Windows.Forms.Padding(2);
+            this.buttonClose.Name = "buttonClose";
+            this.buttonClose.Size = new System.Drawing.Size(68, 30);
+            this.buttonClose.TabIndex = 0;
+            this.buttonClose.Text = "Close";
+            this.buttonClose.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.buttonClose.UseVisualStyleBackColor = false;
+            this.buttonClose.Click += new System.EventHandler(this.buttonClose_Click);
+            // 
+            // buttonSimpan
+            // 
+            this.buttonSimpan.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.buttonSimpan.BackColor = System.Drawing.SystemColors.GrayText;
+            this.buttonSimpan.FlatAppearance.BorderSize = 0;
+            this.buttonSimpan.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonSimpan.Font = new System.Drawing.Font("Barlow", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonSimpan.ForeColor = System.Drawing.Color.NavajoWhite;
+            this.buttonSimpan.Image = ((System.Drawing.Image)(resources.GetObject("buttonSimpan.Image")));
+            this.buttonSimpan.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.buttonSimpan.Location = new System.Drawing.Point(620, 19);
+            this.buttonSimpan.Margin = new System.Windows.Forms.Padding(2);
+            this.buttonSimpan.Name = "buttonSimpan";
+            this.buttonSimpan.Size = new System.Drawing.Size(77, 30);
+            this.buttonSimpan.TabIndex = 0;
+            this.buttonSimpan.Text = "Simpan";
+            this.buttonSimpan.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.buttonSimpan.UseVisualStyleBackColor = false;
+            // 
+            // panel2
+            // 
+            this.panel2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel2.BackgroundImage")));
+            this.panel2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.panel2.Location = new System.Drawing.Point(156, 103);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(494, 253);
+            this.panel2.TabIndex = 21;
             // 
             // BaseFormTambahUbah
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.LightGray;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.panel2);
-            this.Controls.Add(this.LabelJudulUbahtambah);
+            this.Controls.Add(this.panel1);
+            this.Controls.Add(this.TitleBars);
+            this.Controls.Add(this.TitleBar);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "BaseFormTambahUbah";
             this.Text = "BasesFormTambahUbah";
-            this.panel2.ResumeLayout(false);
+            this.TitleBars.ResumeLayout(false);
+            this.TitleBars.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.TitleBar.ResumeLayout(false);
+            this.panel1.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
 
         #endregion
-
-        protected System.Windows.Forms.Panel panel2;
-        protected System.Windows.Forms.Button button5;
         public System.Windows.Forms.Label LabelJudulUbahtambah;
-        public System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Panel TitleBars;
+        private System.Windows.Forms.Label Clock;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Button BtnMin;
+        private System.Windows.Forms.Button BtnMax;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Button BtnClose;
+        private System.Windows.Forms.Panel TitleBar;
+        protected System.Windows.Forms.Panel panel1;
+        protected System.Windows.Forms.Button buttonClose;
+        public System.Windows.Forms.Button buttonSimpan;
+        protected System.Windows.Forms.Panel panel2;
     }
 }

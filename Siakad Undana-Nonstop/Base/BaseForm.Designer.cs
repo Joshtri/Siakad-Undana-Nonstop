@@ -47,6 +47,7 @@
             this.buttonHapus = new System.Windows.Forms.Button();
             this.buttonTambah = new System.Windows.Forms.Button();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.ShowDataButton = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.BaseFormdataGridViewData)).BeginInit();
             this.TitleBars.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -57,13 +58,15 @@
             // BaseFormdataGridViewData
             // 
             this.BaseFormdataGridViewData.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.BaseFormdataGridViewData.Location = new System.Drawing.Point(69, 88);
+            this.BaseFormdataGridViewData.Location = new System.Drawing.Point(118, 107);
             this.BaseFormdataGridViewData.Margin = new System.Windows.Forms.Padding(2);
             this.BaseFormdataGridViewData.Name = "BaseFormdataGridViewData";
             this.BaseFormdataGridViewData.RowHeadersWidth = 51;
             this.BaseFormdataGridViewData.RowTemplate.Height = 24;
-            this.BaseFormdataGridViewData.Size = new System.Drawing.Size(631, 280);
+            this.BaseFormdataGridViewData.Size = new System.Drawing.Size(542, 265);
             this.BaseFormdataGridViewData.TabIndex = 15;
+            this.BaseFormdataGridViewData.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.BaseFormdataGridViewData_CellClick);
+            this.BaseFormdataGridViewData.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.BaseFormdataGridViewData_CellContentClick_1);
             // 
             // TitleBars
             // 
@@ -77,7 +80,7 @@
             this.TitleBars.Dock = System.Windows.Forms.DockStyle.Top;
             this.TitleBars.Location = new System.Drawing.Point(0, 0);
             this.TitleBars.Name = "TitleBars";
-            this.TitleBars.Size = new System.Drawing.Size(800, 30);
+            this.TitleBars.Size = new System.Drawing.Size(787, 30);
             this.TitleBars.TabIndex = 16;
             this.TitleBars.MouseDown += new System.Windows.Forms.MouseEventHandler(this.TitleBars_MouseDown);
             // 
@@ -87,7 +90,7 @@
             this.Clock.AutoSize = true;
             this.Clock.BackColor = System.Drawing.Color.Transparent;
             this.Clock.Font = new System.Drawing.Font("Copse", 9F);
-            this.Clock.Location = new System.Drawing.Point(354, 7);
+            this.Clock.Location = new System.Drawing.Point(347, 7);
             this.Clock.Name = "Clock";
             this.Clock.Size = new System.Drawing.Size(61, 15);
             this.Clock.TabIndex = 18;
@@ -95,7 +98,7 @@
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Image = global::Siakad_Undana_Nonstop.Properties.Resources.Logo_Undana_copy1;
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
             this.pictureBox1.Location = new System.Drawing.Point(3, 2);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(26, 26);
@@ -106,11 +109,11 @@
             // BtnMin
             // 
             this.BtnMin.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.BtnMin.BackgroundImage = global::Siakad_Undana_Nonstop.Properties.Resources.minus_button;
+            this.BtnMin.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("BtnMin.BackgroundImage")));
             this.BtnMin.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.BtnMin.FlatAppearance.BorderSize = 0;
             this.BtnMin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnMin.Location = new System.Drawing.Point(682, 2);
+            this.BtnMin.Location = new System.Drawing.Point(688, 2);
             this.BtnMin.Name = "BtnMin";
             this.BtnMin.Size = new System.Drawing.Size(28, 26);
             this.BtnMin.TabIndex = 9;
@@ -120,11 +123,11 @@
             // BtnMax
             // 
             this.BtnMax.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.BtnMax.BackgroundImage = global::Siakad_Undana_Nonstop.Properties.Resources.minimize;
+            this.BtnMax.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("BtnMax.BackgroundImage")));
             this.BtnMax.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.BtnMax.FlatAppearance.BorderSize = 0;
             this.BtnMax.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnMax.Location = new System.Drawing.Point(716, 2);
+            this.BtnMax.Location = new System.Drawing.Point(722, 2);
             this.BtnMax.Name = "BtnMax";
             this.BtnMax.Size = new System.Drawing.Size(28, 26);
             this.BtnMax.TabIndex = 7;
@@ -144,11 +147,11 @@
             // 
             this.BtnClose.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.BtnClose.BackColor = System.Drawing.Color.Transparent;
-            this.BtnClose.BackgroundImage = global::Siakad_Undana_Nonstop.Properties.Resources.exit1;
+            this.BtnClose.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("BtnClose.BackgroundImage")));
             this.BtnClose.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.BtnClose.FlatAppearance.BorderSize = 0;
             this.BtnClose.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnClose.Location = new System.Drawing.Point(750, 2);
+            this.BtnClose.Location = new System.Drawing.Point(756, 2);
             this.BtnClose.Name = "BtnClose";
             this.BtnClose.Size = new System.Drawing.Size(28, 26);
             this.BtnClose.TabIndex = 8;
@@ -158,12 +161,12 @@
             // TitleBar
             // 
             this.TitleBar.BackColor = System.Drawing.Color.Transparent;
-            this.TitleBar.BackgroundImage = global::Siakad_Undana_Nonstop.Properties.Resources.MainBox1;
+            this.TitleBar.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("TitleBar.BackgroundImage")));
             this.TitleBar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.TitleBar.Controls.Add(this.labelJudul);
             this.TitleBar.Location = new System.Drawing.Point(0, 31);
             this.TitleBar.Name = "TitleBar";
-            this.TitleBar.Size = new System.Drawing.Size(800, 33);
+            this.TitleBar.Size = new System.Drawing.Size(864, 33);
             this.TitleBar.TabIndex = 17;
             // 
             // labelJudul
@@ -171,7 +174,7 @@
             this.labelJudul.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.labelJudul.BackColor = System.Drawing.Color.Transparent;
             this.labelJudul.Font = new System.Drawing.Font("Barlow", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelJudul.Location = new System.Drawing.Point(151, -4);
+            this.labelJudul.Location = new System.Drawing.Point(111, -4);
             this.labelJudul.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.labelJudul.Name = "labelJudul";
             this.labelJudul.Size = new System.Drawing.Size(482, 32);
@@ -183,16 +186,16 @@
             // 
             this.panel1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.panel1.BackColor = System.Drawing.Color.Transparent;
-            this.panel1.BackgroundImage = global::Siakad_Undana_Nonstop.Properties.Resources.MainBox2;
+            this.panel1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel1.BackgroundImage")));
             this.panel1.Controls.Add(this.buttonClose);
             this.panel1.Controls.Add(this.buttonRefresh);
             this.panel1.Controls.Add(this.buttonUbah);
             this.panel1.Controls.Add(this.buttonHapus);
             this.panel1.Controls.Add(this.buttonTambah);
-            this.panel1.Location = new System.Drawing.Point(0, 385);
+            this.panel1.Location = new System.Drawing.Point(0, 401);
             this.panel1.Margin = new System.Windows.Forms.Padding(2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(800, 67);
+            this.panel1.Size = new System.Drawing.Size(787, 67);
             this.panel1.TabIndex = 13;
             // 
             // buttonClose
@@ -203,9 +206,9 @@
             this.buttonClose.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonClose.Font = new System.Drawing.Font("Barlow", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonClose.ForeColor = System.Drawing.Color.NavajoWhite;
-            this.buttonClose.Image = global::Siakad_Undana_Nonstop.Properties.Resources.close;
+            this.buttonClose.Image = ((System.Drawing.Image)(resources.GetObject("buttonClose.Image")));
             this.buttonClose.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.buttonClose.Location = new System.Drawing.Point(701, 19);
+            this.buttonClose.Location = new System.Drawing.Point(663, 22);
             this.buttonClose.Margin = new System.Windows.Forms.Padding(2);
             this.buttonClose.Name = "buttonClose";
             this.buttonClose.Size = new System.Drawing.Size(68, 30);
@@ -220,9 +223,9 @@
             this.buttonRefresh.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.buttonRefresh.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("buttonRefresh.BackgroundImage")));
             this.buttonRefresh.Font = new System.Drawing.Font("Barlow", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonRefresh.Image = global::Siakad_Undana_Nonstop.Properties.Resources.rey_copy;
+            this.buttonRefresh.Image = ((System.Drawing.Image)(resources.GetObject("buttonRefresh.Image")));
             this.buttonRefresh.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.buttonRefresh.Location = new System.Drawing.Point(436, 16);
+            this.buttonRefresh.Location = new System.Drawing.Point(429, 16);
             this.buttonRefresh.Margin = new System.Windows.Forms.Padding(2);
             this.buttonRefresh.Name = "buttonRefresh";
             this.buttonRefresh.Size = new System.Drawing.Size(104, 36);
@@ -235,9 +238,9 @@
             this.buttonUbah.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.buttonUbah.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("buttonUbah.BackgroundImage")));
             this.buttonUbah.Font = new System.Drawing.Font("Barlow", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonUbah.Image = global::Siakad_Undana_Nonstop.Properties.Resources.download_icon_create_24px_131985189925418849_24;
+            this.buttonUbah.Image = ((System.Drawing.Image)(resources.GetObject("buttonUbah.Image")));
             this.buttonUbah.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.buttonUbah.Location = new System.Drawing.Point(183, 16);
+            this.buttonUbah.Location = new System.Drawing.Point(176, 16);
             this.buttonUbah.Margin = new System.Windows.Forms.Padding(2);
             this.buttonUbah.Name = "buttonUbah";
             this.buttonUbah.Size = new System.Drawing.Size(104, 36);
@@ -250,9 +253,9 @@
             this.buttonHapus.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.buttonHapus.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("buttonHapus.BackgroundImage")));
             this.buttonHapus.Font = new System.Drawing.Font("Barlow", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonHapus.Image = global::Siakad_Undana_Nonstop.Properties.Resources.trash_copy1;
+            this.buttonHapus.Image = ((System.Drawing.Image)(resources.GetObject("buttonHapus.Image")));
             this.buttonHapus.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.buttonHapus.Location = new System.Drawing.Point(311, 16);
+            this.buttonHapus.Location = new System.Drawing.Point(304, 16);
             this.buttonHapus.Margin = new System.Windows.Forms.Padding(2);
             this.buttonHapus.Name = "buttonHapus";
             this.buttonHapus.Size = new System.Drawing.Size(104, 37);
@@ -265,9 +268,9 @@
             this.buttonTambah.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.buttonTambah.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("buttonTambah.BackgroundImage")));
             this.buttonTambah.Font = new System.Drawing.Font("Barlow", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonTambah.Image = global::Siakad_Undana_Nonstop.Properties.Resources.add1;
+            this.buttonTambah.Image = ((System.Drawing.Image)(resources.GetObject("buttonTambah.Image")));
             this.buttonTambah.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.buttonTambah.Location = new System.Drawing.Point(59, 16);
+            this.buttonTambah.Location = new System.Drawing.Point(52, 16);
             this.buttonTambah.Margin = new System.Windows.Forms.Padding(2);
             this.buttonTambah.Name = "buttonTambah";
             this.buttonTambah.Size = new System.Drawing.Size(104, 36);
@@ -281,20 +284,35 @@
             this.timer1.Enabled = true;
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
+            // ShowDataButton
+            // 
+            this.ShowDataButton.Image = ((System.Drawing.Image)(resources.GetObject("ShowDataButton.Image")));
+            this.ShowDataButton.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.ShowDataButton.Location = new System.Drawing.Point(682, 342);
+            this.ShowDataButton.Name = "ShowDataButton";
+            this.ShowDataButton.Size = new System.Drawing.Size(93, 30);
+            this.ShowDataButton.TabIndex = 18;
+            this.ShowDataButton.Text = "Show Data";
+            this.ShowDataButton.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.ShowDataButton.UseVisualStyleBackColor = true;
+            // 
             // BaseForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.LightGray;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(787, 469);
+            this.Controls.Add(this.ShowDataButton);
             this.Controls.Add(this.TitleBar);
             this.Controls.Add(this.TitleBars);
             this.Controls.Add(this.BaseFormdataGridViewData);
             this.Controls.Add(this.panel1);
             this.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "BaseForm";
             this.Text = "Base Form";
+            this.Load += new System.EventHandler(this.BaseForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.BaseFormdataGridViewData)).EndInit();
             this.TitleBars.ResumeLayout(false);
             this.TitleBars.PerformLayout();
@@ -311,9 +329,7 @@
         protected System.Windows.Forms.Button buttonUbah;
         protected System.Windows.Forms.Button buttonTambah;
         protected System.Windows.Forms.Label labelJudul;
-        protected System.Windows.Forms.Button buttonClose;
         public System.Windows.Forms.Button buttonHapus;
-        protected System.Windows.Forms.DataGridView BaseFormdataGridViewData;
         private System.Windows.Forms.Panel TitleBars;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Button BtnMax;
@@ -323,5 +339,8 @@
         private System.Windows.Forms.Panel TitleBar;
         private System.Windows.Forms.Label Clock;
         private System.Windows.Forms.Timer timer1;
+        public System.Windows.Forms.DataGridView BaseFormdataGridViewData;
+        protected System.Windows.Forms.Button ShowDataButton;
+        protected System.Windows.Forms.Button buttonClose;
     }
 }

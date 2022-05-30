@@ -31,21 +31,43 @@
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
+            // panel1
+            // 
+            this.panel1.Location = new System.Drawing.Point(3, 383);
+            this.panel1.Size = new System.Drawing.Size(797, 67);
+            // 
             // buttonRefresh
             // 
+            this.buttonRefresh.Location = new System.Drawing.Point(434, 16);
             this.buttonRefresh.Click += new System.EventHandler(this.ButtonRefresh_Click);
             // 
             // buttonUbah
             // 
+            this.buttonUbah.Location = new System.Drawing.Point(181, 16);
             this.buttonUbah.Click += new System.EventHandler(this.buttonUbah_Click);
             // 
             // buttonTambah
             // 
+            this.buttonTambah.Location = new System.Drawing.Point(57, 16);
             this.buttonTambah.Click += new System.EventHandler(this.buttonTambah_Click);
+            // 
+            // labelJudul
+            // 
+            this.labelJudul.Location = new System.Drawing.Point(146, 0);
             // 
             // buttonHapus
             // 
+            this.buttonHapus.Location = new System.Drawing.Point(309, 16);
             this.buttonHapus.Click += new System.EventHandler(this.ButtonHapus_Click);
+            // 
+            // ShowDataButton
+            // 
+            this.ShowDataButton.Click += new System.EventHandler(this.ShowDataButton_Click);
+            // 
+            // buttonClose
+            // 
+            this.buttonClose.FlatAppearance.BorderSize = 0;
+            this.buttonClose.Location = new System.Drawing.Point(664, 22);
             // 
             // FormDaftarMahasiswa
             // 
@@ -55,8 +77,8 @@
             this.Name = "FormDaftarMahasiswa";
             this.Text = "FormDaftarMahasiswa";
             this.Activated += new System.EventHandler(this.FormDaftarMahasiswa_Activated);
+            this.Load += new System.EventHandler(this.FormDaftarMahasiswa_Load);
             this.panel1.ResumeLayout(false);
-            
             this.ResumeLayout(false);
 
         }

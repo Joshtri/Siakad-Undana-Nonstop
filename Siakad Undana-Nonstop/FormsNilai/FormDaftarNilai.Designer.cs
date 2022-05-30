@@ -29,16 +29,31 @@
         private void InitializeComponent()
         {
             this.panel1.SuspendLayout();
-            
             this.SuspendLayout();
+            // 
+            // panel1
+            // 
+            this.panel1.Location = new System.Drawing.Point(0, 382);
+            this.panel1.Size = new System.Drawing.Size(800, 67);
+            // 
+            // buttonRefresh
+            // 
+            this.buttonRefresh.Location = new System.Drawing.Point(436, 16);
             // 
             // buttonUbah
             // 
+            this.buttonUbah.Location = new System.Drawing.Point(183, 16);
             this.buttonUbah.Click += new System.EventHandler(this.buttonUbah_Click);
             // 
             // buttonTambah
             // 
+            this.buttonTambah.Location = new System.Drawing.Point(59, 16);
             this.buttonTambah.Click += new System.EventHandler(this.buttonTambah_Click);
+            // 
+            // buttonHapus
+            // 
+            this.buttonHapus.Location = new System.Drawing.Point(311, 16);
+            this.buttonHapus.Click += new System.EventHandler(this.buttonHapus_Click);
             // 
             // FormDaftarNilai
             // 
@@ -48,7 +63,6 @@
             this.Name = "FormDaftarNilai";
             this.Text = "FormDaftarNilai";
             this.panel1.ResumeLayout(false);
-           
             this.ResumeLayout(false);
 
         }

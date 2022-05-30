@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Siakad_Undana_Nonstop.Entity
 {
-    internal class Semester
+    public class Semester
     {
         public string IdSemester { get; set; } //Key
         public string SemesterName { get; set; }

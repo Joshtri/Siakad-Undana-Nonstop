@@ -1,0 +1,21 @@
+D:\Code\C#\Project 1.0\Siakad Undana-Nonstop\Siakad Undana-Nonstop\bin\Release\Siakad Undana-Nonstop.exe.config
+D:\Code\C#\Project 1.0\Siakad Undana-Nonstop\Siakad Undana-Nonstop\bin\Release\Siakad Undana-Nonstop.exe
+D:\Code\C#\Project 1.0\Siakad Undana-Nonstop\Siakad Undana-Nonstop\bin\Release\Siakad Undana-Nonstop.pdb
+D:\Code\C#\Project 1.0\Siakad Undana-Nonstop\Siakad Undana-Nonstop\obj\Release\Siakad Undana-Nonstop.csproj.AssemblyReference.cache
+D:\Code\C#\Project 1.0\Siakad Undana-Nonstop\Siakad Undana-Nonstop\obj\Release\Siakad Undana-Nonstop.csproj.SuggestedBindingRedirects.cache
+D:\Code\C#\Project 1.0\Siakad Undana-Nonstop\Siakad Undana-Nonstop\obj\Release\Siakad_Undana_Nonstop.Base.BaseForm.resources
+D:\Code\C#\Project 1.0\Siakad Undana-Nonstop\Siakad Undana-Nonstop\obj\Release\Siakad_Undana_Nonstop.Base.BaseFormTambahUbah.resources
+D:\Code\C#\Project 1.0\Siakad Undana-Nonstop\Siakad Undana-Nonstop\obj\Release\Siakad_Undana_Nonstop.LoginOfficer.resources
+D:\Code\C#\Project 1.0\Siakad Undana-Nonstop\Siakad Undana-Nonstop\obj\Release\Siakad_Undana_Nonstop.FormsMahasiswa.FormDaftarMahasiswa.resources
+D:\Code\C#\Project 1.0\Siakad Undana-Nonstop\Siakad Undana-Nonstop\obj\Release\Siakad_Undana_Nonstop.FormsMahasiswa.FormTambahUbahMahasiswa.resources
+D:\Code\C#\Project 1.0\Siakad Undana-Nonstop\Siakad Undana-Nonstop\obj\Release\Siakad_Undana_Nonstop.FormsMK.FormDaftarMK.resources
+D:\Code\C#\Project 1.0\Siakad Undana-Nonstop\Siakad Undana-Nonstop\obj\Release\Siakad_Undana_Nonstop.FormsNilai.FormDaftarNilai.resources
+D:\Code\C#\Project 1.0\Siakad Undana-Nonstop\Siakad Undana-Nonstop\obj\Release\Siakad_Undana_Nonstop.FormsSemester.FormDaftarSemester.resources
+D:\Code\C#\Project 1.0\Siakad Undana-Nonstop\Siakad Undana-Nonstop\obj\Release\Siakad_Undana_Nonstop.MainPage.MainPages.resources
+D:\Code\C#\Project 1.0\Siakad Undana-Nonstop\Siakad Undana-Nonstop\obj\Release\Siakad_Undana_Nonstop.Properties.Resources.resources
+D:\Code\C#\Project 1.0\Siakad Undana-Nonstop\Siakad Undana-Nonstop\obj\Release\Siakad_Undana_Nonstop.Siakad_Menu.resources
+D:\Code\C#\Project 1.0\Siakad Undana-Nonstop\Siakad Undana-Nonstop\obj\Release\Siakad_Undana_Nonstop.StudentsForm.resources
+D:\Code\C#\Project 1.0\Siakad Undana-Nonstop\Siakad Undana-Nonstop\obj\Release\Siakad Undana-Nonstop.csproj.GenerateResource.cache
+D:\Code\C#\Project 1.0\Siakad Undana-Nonstop\Siakad Undana-Nonstop\obj\Release\Siakad Undana-Nonstop.csproj.CoreCompileInputs.cache
+D:\Code\C#\Project 1.0\Siakad Undana-Nonstop\Siakad Undana-Nonstop\obj\Release\Siakad Undana-Nonstop.exe
+D:\Code\C#\Project 1.0\Siakad Undana-Nonstop\Siakad Undana-Nonstop\obj\Release\Siakad Undana-Nonstop.pdb

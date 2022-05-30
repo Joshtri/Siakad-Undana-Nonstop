@@ -28,14 +28,15 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainPages));
             this.label2 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.rjButton3 = new Siakad_Undana_Nonstop.RJButton();
+            this.OfficeButtonLogin = new Siakad_Undana_Nonstop.RJButton();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.rjButton1 = new Siakad_Undana_Nonstop.RJButton();
-            this.OfficerButtonLogin = new Siakad_Undana_Nonstop.RJButton();
             this.panel2.SuspendLayout();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -51,16 +52,53 @@
             // 
             // panel2
             // 
-            this.panel2.BackgroundImage = global::Siakad_Undana_Nonstop.Properties.Resources.BG_UNDANA;
+            this.panel2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel2.BackgroundImage")));
             this.panel2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.panel2.Controls.Add(this.rjButton1);
-            this.panel2.Controls.Add(this.OfficerButtonLogin);
+            this.panel2.Controls.Add(this.rjButton3);
+            this.panel2.Controls.Add(this.OfficeButtonLogin);
             this.panel2.Controls.Add(this.panel1);
             this.panel2.Controls.Add(this.pictureBox1);
             this.panel2.Location = new System.Drawing.Point(-27, -36);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(734, 396);
             this.panel2.TabIndex = 7;
+            // 
+            // rjButton3
+            // 
+            this.rjButton3.BackColor = System.Drawing.Color.Peru;
+            this.rjButton3.BackgroundColor = System.Drawing.Color.Peru;
+            this.rjButton3.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.rjButton3.BorderRadius = 10;
+            this.rjButton3.BorderSize = 0;
+            this.rjButton3.FlatAppearance.BorderSize = 0;
+            this.rjButton3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.rjButton3.ForeColor = System.Drawing.Color.White;
+            this.rjButton3.Location = new System.Drawing.Point(403, 299);
+            this.rjButton3.Name = "rjButton3";
+            this.rjButton3.Size = new System.Drawing.Size(150, 40);
+            this.rjButton3.TabIndex = 8;
+            this.rjButton3.Text = "Student";
+            this.rjButton3.TextColor = System.Drawing.Color.White;
+            this.rjButton3.UseVisualStyleBackColor = false;
+            // 
+            // OfficeButtonLogin
+            // 
+            this.OfficeButtonLogin.BackColor = System.Drawing.Color.Peru;
+            this.OfficeButtonLogin.BackgroundColor = System.Drawing.Color.Peru;
+            this.OfficeButtonLogin.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.OfficeButtonLogin.BorderRadius = 10;
+            this.OfficeButtonLogin.BorderSize = 0;
+            this.OfficeButtonLogin.FlatAppearance.BorderSize = 0;
+            this.OfficeButtonLogin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.OfficeButtonLogin.ForeColor = System.Drawing.Color.White;
+            this.OfficeButtonLogin.Location = new System.Drawing.Point(196, 299);
+            this.OfficeButtonLogin.Name = "OfficeButtonLogin";
+            this.OfficeButtonLogin.Size = new System.Drawing.Size(150, 40);
+            this.OfficeButtonLogin.TabIndex = 7;
+            this.OfficeButtonLogin.Text = "Officer";
+            this.OfficeButtonLogin.TextColor = System.Drawing.Color.White;
+            this.OfficeButtonLogin.UseVisualStyleBackColor = false;
+            this.OfficeButtonLogin.Click += new System.EventHandler(this.OfficeButtonLogin_Click);
             // 
             // panel1
             // 
@@ -95,50 +133,14 @@
             // pictureBox1
             // 
             this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox1.Image = global::Siakad_Undana_Nonstop.Properties.Resources.Logo_Undana_copy3;
+            this.pictureBox1.ErrorImage = null;
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
             this.pictureBox1.Location = new System.Drawing.Point(291, 87);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(133, 133);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 3;
             this.pictureBox1.TabStop = false;
-            // 
-            // rjButton1
-            // 
-            this.rjButton1.BackColor = System.Drawing.Color.Peru;
-            this.rjButton1.BackgroundColor = System.Drawing.Color.Peru;
-            this.rjButton1.BorderColor = System.Drawing.Color.PaleVioletRed;
-            this.rjButton1.BorderRadius = 10;
-            this.rjButton1.BorderSize = 0;
-            this.rjButton1.FlatAppearance.BorderSize = 0;
-            this.rjButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.rjButton1.ForeColor = System.Drawing.Color.White;
-            this.rjButton1.Location = new System.Drawing.Point(381, 298);
-            this.rjButton1.Name = "rjButton1";
-            this.rjButton1.Size = new System.Drawing.Size(150, 40);
-            this.rjButton1.TabIndex = 8;
-            this.rjButton1.Text = "Student";
-            this.rjButton1.TextColor = System.Drawing.Color.White;
-            this.rjButton1.UseVisualStyleBackColor = false;
-            // 
-            // OfficerButtonLogin
-            // 
-            this.OfficerButtonLogin.BackColor = System.Drawing.Color.Peru;
-            this.OfficerButtonLogin.BackgroundColor = System.Drawing.Color.Peru;
-            this.OfficerButtonLogin.BorderColor = System.Drawing.Color.PaleVioletRed;
-            this.OfficerButtonLogin.BorderRadius = 10;
-            this.OfficerButtonLogin.BorderSize = 0;
-            this.OfficerButtonLogin.FlatAppearance.BorderSize = 0;
-            this.OfficerButtonLogin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.OfficerButtonLogin.ForeColor = System.Drawing.Color.White;
-            this.OfficerButtonLogin.Location = new System.Drawing.Point(193, 298);
-            this.OfficerButtonLogin.Name = "OfficerButtonLogin";
-            this.OfficerButtonLogin.Size = new System.Drawing.Size(150, 40);
-            this.OfficerButtonLogin.TabIndex = 7;
-            this.OfficerButtonLogin.Text = "Officer";
-            this.OfficerButtonLogin.TextColor = System.Drawing.Color.White;
-            this.OfficerButtonLogin.UseVisualStyleBackColor = false;
-            this.OfficerButtonLogin.Click += new System.EventHandler(this.OfficerButtonLogin_Click);
             // 
             // MainPages
             // 
@@ -149,6 +151,7 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.panel2);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "MainPages";
             this.Text = "MainPages";
             this.panel2.ResumeLayout(false);
@@ -168,7 +171,9 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panel2;
-        private RJButton rjButton1;
-        private RJButton OfficerButtonLogin;
+        //private RJButton rjButton1;
+        //private RJButton OfficerButtonLogin;
+        private RJButton rjButton3;
+        private RJButton OfficeButtonLogin;
     }
 }

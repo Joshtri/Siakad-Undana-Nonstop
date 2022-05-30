@@ -36,17 +36,44 @@
             this.label2 = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
+            this.textBoxAngkatan = new System.Windows.Forms.TextBox();
+            this.textBoxTanggalLahir = new System.Windows.Forms.TextBox();
+            this.textBoxJK = new System.Windows.Forms.TextBox();
+            this.textBoxNama = new System.Windows.Forms.TextBox();
+            this.textBoxNIM = new System.Windows.Forms.TextBox();
+            this.label8 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
-          
             this.SuspendLayout();
             // 
-            // button1
+            // buttonClose
             // 
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.buttonClose.FlatAppearance.BorderSize = 0;
+       
             // 
-            // panelContent
+            // buttonSimpan
             // 
-        
+            this.buttonSimpan.FlatAppearance.BorderSize = 0;
+            this.buttonSimpan.Click += new System.EventHandler(this.buttonSimpan_Click);
+            // 
+            // panel2
+            // 
+            this.panel2.Controls.Add(this.textBoxNIM);
+            this.panel2.Controls.Add(this.label9);
+            this.panel2.Controls.Add(this.label3);
+            this.panel2.Controls.Add(this.textBoxAngkatan);
+            this.panel2.Controls.Add(this.label6);
+            this.panel2.Controls.Add(this.textBoxTanggalLahir);
+            this.panel2.Controls.Add(this.label7);
+            this.panel2.Controls.Add(this.textBoxJK);
+            this.panel2.Controls.Add(this.label8);
+            this.panel2.Controls.Add(this.textBoxNama);
+            this.panel2.Location = new System.Drawing.Point(147, 97);
+            // 
             // textBox4
             // 
             this.textBox4.Location = new System.Drawing.Point(304, 203);
@@ -119,6 +146,101 @@
             this.label1.TabIndex = 17;
             this.label1.Text = "NIM";
             // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("Copse", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.Location = new System.Drawing.Point(114, 198);
+            this.label9.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(60, 14);
+            this.label9.TabIndex = 35;
+            this.label9.Text = "Angkatan";
+            // 
+            // textBoxAngkatan
+            // 
+            this.textBoxAngkatan.Location = new System.Drawing.Point(228, 194);
+            this.textBoxAngkatan.Margin = new System.Windows.Forms.Padding(2);
+            this.textBoxAngkatan.Name = "textBoxAngkatan";
+            this.textBoxAngkatan.Size = new System.Drawing.Size(146, 20);
+            this.textBoxAngkatan.TabIndex = 34;
+            // 
+            // textBoxTanggalLahir
+            // 
+            this.textBoxTanggalLahir.Location = new System.Drawing.Point(228, 150);
+            this.textBoxTanggalLahir.Margin = new System.Windows.Forms.Padding(2);
+            this.textBoxTanggalLahir.Name = "textBoxTanggalLahir";
+            this.textBoxTanggalLahir.Size = new System.Drawing.Size(146, 20);
+            this.textBoxTanggalLahir.TabIndex = 33;
+            // 
+            // textBoxJK
+            // 
+            this.textBoxJK.Location = new System.Drawing.Point(228, 110);
+            this.textBoxJK.Margin = new System.Windows.Forms.Padding(2);
+            this.textBoxJK.Name = "textBoxJK";
+            this.textBoxJK.Size = new System.Drawing.Size(146, 20);
+            this.textBoxJK.TabIndex = 32;
+            // 
+            // textBoxNama
+            // 
+            this.textBoxNama.Location = new System.Drawing.Point(228, 40);
+            this.textBoxNama.Margin = new System.Windows.Forms.Padding(2);
+            this.textBoxNama.Name = "textBoxNama";
+            this.textBoxNama.Size = new System.Drawing.Size(146, 20);
+            this.textBoxNama.TabIndex = 31;
+            // 
+            // textBoxNIM
+            // 
+            this.textBoxNIM.Location = new System.Drawing.Point(228, 74);
+            this.textBoxNIM.Margin = new System.Windows.Forms.Padding(2);
+            this.textBoxNIM.Name = "textBoxNIM";
+            this.textBoxNIM.Size = new System.Drawing.Size(146, 20);
+            this.textBoxNIM.TabIndex = 30;
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Copse", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.Location = new System.Drawing.Point(114, 154);
+            this.label8.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(78, 14);
+            this.label8.TabIndex = 29;
+            this.label8.Text = "Tanggal lahir";
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Copse", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Location = new System.Drawing.Point(114, 110);
+            this.label7.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(81, 14);
+            this.label7.TabIndex = 28;
+            this.label7.Text = "Jenis kelamin";
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Copse", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Location = new System.Drawing.Point(114, 40);
+            this.label6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(40, 14);
+            this.label6.TabIndex = 27;
+            this.label6.Text = "Nama";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Copse", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(114, 78);
+            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(31, 14);
+            this.label3.TabIndex = 26;
+            this.label3.Text = "NIM";
+            // 
             // FormTambahUbahMahasiswa
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -126,8 +248,9 @@
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Name = "FormTambahUbahMahasiswa";
             this.Text = "FormTambahUbahMahasiswa";
+            this.panel1.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
-          
+            this.panel2.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -142,5 +265,15 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Label label1;
+        protected System.Windows.Forms.Label label9;
+        protected System.Windows.Forms.Label label8;
+        protected System.Windows.Forms.Label label7;
+        protected System.Windows.Forms.Label label6;
+        protected System.Windows.Forms.TextBox textBoxNIM;
+        protected System.Windows.Forms.TextBox textBoxAngkatan;
+        protected System.Windows.Forms.TextBox textBoxTanggalLahir;
+        protected System.Windows.Forms.TextBox textBoxJK;
+        protected System.Windows.Forms.TextBox textBoxNama;
+        protected System.Windows.Forms.Label label3;
     }
 }

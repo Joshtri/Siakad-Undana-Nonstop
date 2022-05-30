@@ -18,8 +18,10 @@ namespace Siakad_Undana_Nonstop
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
 
-            Application.Run(new MainPages());
-            //Application.Run(new Form1());
+            //Application.Run(new MainPages());
+            //Application.Run(new menu));
+
+            Application.Run( new Siakad_Menu());
         }
     }
 }

@@ -17,11 +17,13 @@ namespace Siakad_Undana_Nonstop.MainPage
             InitializeComponent();
         }
 
-        private void OfficerButtonLogin_Click(object sender, EventArgs e)
+        private void OfficeButtonLogin_Click(object sender, EventArgs e)
         {
             LoginOfficer officer = new LoginOfficer();
             officer.Show();
             Hide();
         }
+       
+
     }
 }

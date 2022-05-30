@@ -12,8 +12,8 @@ namespace Siakad_Undana_Nonstop
             InitializeComponent();
         }
 
-        private String Username;
-        private String Password; //PK
+        public String Username;
+        public String Password; //PK
 
         private SqlConnection connecting = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;Initial Catalog=SiakadDB;Integrated Security=True");
 
